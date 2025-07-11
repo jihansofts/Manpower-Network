@@ -1,3 +1,4 @@
+import HappyClinet from "@/components/Homepages/HappyClinet";
 import Hero from "@/components/Homepages/Hero";
 import OurIndustries from "@/components/Homepages/OurIndustries";
 import OurProcess from "@/components/Homepages/OurProcess";
@@ -27,6 +28,7 @@ export default function Home() {
         <Services />
         <OurIndustries />
         <OurProcess />
+        <HappyClinet />
       </Layout>
     </div>
   );
