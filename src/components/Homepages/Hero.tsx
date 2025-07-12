@@ -14,15 +14,15 @@ export default function Hero() {
 
       {/* Overlay Text */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center mt-10 z-10">
-        <h1 className="text-white lg:text-[80px] md:text-[40px] text-[32px] font-medium">
+        <h1 className="text-white lg:text-[80px] md:text-[40px] text-[24px] font-medium">
           Uniting Talent With Opportunity
         </h1>
-        <p className="text-white text-[20px] mt-4">
+        <p className="text-white lg:text-[20px] md:text-[16px] text-[12px] mt-4">
           Discover top talent, ideal positions, and innovative strategies to
           thrive.
         </p>
         <div>
-          <button className="bg-white text-primary hover:bg-primary hover:text-white cursor-pointer duration-200 uppercase px-10 py-3 font-semibold rounded font-sans mt-5">
+          <button className="bg-white text-primary hover:bg-primary hover:text-white cursor-pointer duration-200 uppercase px-10 py-3 font-semibold lg:text-[16px] text-[10px] sm:text-[12px] rounded font-sans mt-5">
             Talk to Our Experts
           </button>
         </div>

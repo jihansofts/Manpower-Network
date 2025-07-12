@@ -49,32 +49,38 @@ const Processdata: Process[] = [
   },
 ];
 export default function OurProcess() {
-    useEffect(() => {
-      gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
 
-      gsap.utils.toArray<HTMLElement>(".process-card").forEach((el, i) => {
-        gsap.from(el, {
-          scrollTrigger: {
-            trigger: el,
-            start: "top 85%",
-            toggleActions: "play none none none",
-          },
-          y: 40,
-          opacity: 0,
-          duration: 0.8,
-          delay: i * 0.1,
-          ease: "power3.out",
-        });
+    gsap.utils.toArray<HTMLElement>(".process-card").forEach((el, i) => {
+      const fromX = i % 2 === 0 ? -100 : 100; // even from left, odd from right
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+        x: fromX,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
+        delay: i * 0.1,
       });
+    });
 
-      return () => ScrollTrigger.getAll().forEach((t) => t.kill());
-    }, []);
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
+
   return (
     <section className="bg-secendary py-20">
       <div className="container mx-auto px-5">
         <div className="flex flex-col justify-center lg:items-start md:items-center max-w-5xl">
-          <span className="text-white text-start block mb-5">Our Process</span>
-          <h2 className="text-white text-start lg:text-[42px] md:text-[32px] text-[24px] font-medium mb-10">
+          <span className="text-white text-start font-normal block mb-5">
+            Our Process
+          </span>
+          <h2 className="text-white text-start lg:text-[42px] md:text-[32px] text-[24px] font-semibold mb-10">
             From Application to Hiring – We Make It Simple
           </h2>
         </div>
@@ -92,13 +98,13 @@ export default function OurProcess() {
                   className="h-16 w-16"
                 />
               </div>
-              <span className="text-white text-lg font-medium mb-2">
+              {/* <span className="text-white text-lg font-medium mb-2">
                 Step {item.id}
-              </span>
-              <h2 className="text-heading text-xl font-medium mb-4">
+              </span> */}
+              <h2 className="text-heading text-[22px] font-semibold mb-4">
                 {item.title}
               </h2>
-              <p className="text-text font-light">{item.desc}</p>
+              <p className="text-text font-normal text-[14px] mt-5">{item.desc}</p>
             </div>
           ))}
         </div>

@@ -29,26 +29,28 @@ export default function Whoweare() {
         }
       );
 
-      // Text lines animation
-      gsap.fromTo(
-        linesRef.current,
-        { opacity: 0.2, y: 20 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power2.out",
-          stagger: 0.2,
-          scrollTrigger: {
-            trigger: linesRef.current[0],
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+      // Line-by-line scroll reading effect
+      linesRef.current.forEach((line) => {
+        if (!line) return;
+        gsap.fromTo(
+          line,
+          { opacity: 0.2 },
+          {
+            opacity: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: line,
+              start: "top 80%", // when top of line hits 80% viewport
+              end: "top 80%", // end when it's at 60%
+              toggleActions: "play none none reverse",
+              scrub: true,
+            },
+          }
+        );
+      });
     });
   }, []);
-
+  
   const lines = [
     "For employers, we deliver the right talent with precision and speed,",
     "ensuring seamless workforce growth.",
@@ -81,7 +83,7 @@ export default function Whoweare() {
                 ref={(el) => {
                   linesRef.current[index] = el;
                 }}
-                className="text-[18px] lg:text-[32px] md:text-[24px] text-heading opacity-20 transition-opacity duration-500">
+                className="text-[18px] lg:text-[32px] md:text-[24px] font-normal text-heading opacity-20 transition-opacity duration-300">
                 {line}
               </p>
             ))}

@@ -9,10 +9,12 @@ interface Service {
   description: string;
   link: string;
 }
+
 export default function Services() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const leftContentRef = useRef<HTMLDivElement>(null);
   const rightContentRef = useRef<HTMLDivElement>(null);
+
   const services: Service[] = [
     {
       title: "Payroll and HRO Services",
@@ -71,7 +73,6 @@ export default function Services() {
     const mm = gsap.matchMedia();
 
     mm.add("(min-width: 1024px)", () => {
-      // Pin only on desktop
       if (leftContentRef.current && sectionRef.current) {
         ScrollTrigger.create({
           trigger: sectionRef.current,
@@ -86,7 +87,6 @@ export default function Services() {
       };
     });
 
-    // Animate service items for all devices
     gsap.utils.toArray(".service-item").forEach((item, i) => {
       const el = item as Element;
       gsap.from(el, {
@@ -105,15 +105,15 @@ export default function Services() {
 
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-      mm.kill(); // Clean up matchMedia
+      mm.kill();
     };
   }, []);
 
   return (
     <section
       ref={sectionRef}
-      className="relative overflow-hidden  bg-white py-20">
-      <div className="container mx-auto px-4 py-20 flex flex-col lg:flex-row">
+      className="relative overflow-x-hidden bg-white py-20">
+      <div className="container max-w-7xl mx-auto px-4 py-20 flex flex-col lg:flex-row">
         {/* Fixed Left Content */}
         <div
           ref={leftContentRef}
@@ -122,7 +122,7 @@ export default function Services() {
             Our Services
           </h2>
           <p className="text-xl text-heading mb-8">Explore Our Solutions</p>
-          <button className="text-heading cursor-pointer  font-bold border border-primary py-3 px-7 hover:bg-primary hover:text-white transition-colors duration-300">
+          <button className="text-heading cursor-pointer font-bold border border-primary py-3 px-7 hover:bg-primary hover:text-white transition-colors duration-300">
             View all Services →
           </button>
         </div>
@@ -132,7 +132,7 @@ export default function Services() {
           {services.map((service, index) => (
             <div key={index} className="service-item">
               <div className="flex flex-col md:flex-row gap-8 bg-[#EFF6FF] p-8">
-                {/* Image Column (matches screenshot layout) */}
+                {/* Image Column */}
                 <div className="md:w-1/3">
                   <div className="relative h-full w-full rounded-lg overflow-hidden">
                     <Image
@@ -146,18 +146,18 @@ export default function Services() {
                   </div>
                 </div>
 
-                {/* Text Content Column (matches screenshot styling) */}
+                {/* Text Content Column */}
                 <div className="md:w-2/3">
-                  <div className="border-l-4 border-primary pl-6">
+                  <div className="pl-6">
                     <h3 className="text-3xl font-bold text-gray-900 mb-6">
                       {service.title}
                     </h3>
-                    <p className="text-gray-600 mb-8 text-lg leading-relaxed">
+                    <p className="text-text mb-8 text-[14px] font-normal leading-relaxed">
                       {service.description}
                     </p>
                     <div className="border-t border-gray-200 pt-6">
                       <button className="text-primary font-bold hover:underline text-lg">
-                        View More →
+                        {service.link}
                       </button>
                     </div>
                   </div>

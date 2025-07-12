@@ -16,7 +16,7 @@ export default function HappyClinet() {
   return (
     <section className="bg-background py-20">
       <div className="container mx-auto px-5">
-        <div className="flex justify-between ">
+        <div className="flex md:flex-row flex-col justify-between ">
           <h2 className="text-primary text-start lg:text-[42px] md:text-[32px] text-[24px] font-medium mb-10">
             100+ Happy Clients
           </h2>
@@ -26,7 +26,7 @@ export default function HappyClinet() {
             </button>
           </div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 mt-5">
           {img.map((item, i) => {
             return (
               <div

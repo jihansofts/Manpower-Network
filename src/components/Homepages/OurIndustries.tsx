@@ -1,5 +1,10 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
+
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function OurIndustries() {
   const industries = [
@@ -33,13 +38,40 @@ export default function OurIndustries() {
     },
   ];
 
+  const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    imageRefs.current.forEach((img) => {
+      if (!img) return;
+      gsap.fromTo(
+        img,
+        { scale: 1.1, opacity: 0.8 },
+        {
+          scale: 1,
+          opacity: 1,
+          duration: 1,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: img,
+            start: "top 80%",
+            toggleActions: "play none none reverse",
+          },
+        }
+      );
+    });
+  }, []);
+
   return (
     <section className="py-20 bg-[#F8F8F8]">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-xl text-gray-600 mb-2">Our Industries</p>
-          <h2 className="text-[24px] md:text-[48px] sm:text-[32px] font-medium text-heading ">
+          <p className="text-[16px] text-text font-normal mb-2">
+            Our Industries
+          </p>
+          <h2 className="text-[24px] md:text-[48px] sm:text-[32px] font-semibold text-heading ">
             Powering Growth Across <br /> Industries
           </h2>
         </div>
@@ -54,7 +86,11 @@ export default function OurIndustries() {
               {/* Flex container for image + content */}
               <div className="flex flex-col md:flex-row min-h-[400px]">
                 {/* Image on left - md:w-2/5 for 40% width */}
-                <div className="md:w-2/5 relative h-64 md:h-auto">
+                <div
+                  ref={(el) => {
+                    imageRefs.current[index] = el;
+                  }}
+                  className="md:w-2/5 relative h-64 md:h-auto">
                   <Image
                     src={industry.image}
                     alt={industry.title}
@@ -68,10 +104,10 @@ export default function OurIndustries() {
                 <div
                   className="md:w-3/5 p-8  flex flex-col justify-center"
                   style={{ backgroundColor: industry.bgColor }}>
-                  <h3 className="text-2xl md:text-[20px] font-bold text-heading mb-4">
+                  <h3 className="text-2xl md:text-[20px] font-semibold text-heading mb-4">
                     {industry.title}
                   </h3>
-                  <p className="text-text mb-6 text-[14px]">
+                  <p className="text-text mb-6 text-[14px] font-normal">
                     {industry.description}
                   </p>
                   <button className="text-primary text-[16px] font-bold hover:underline self-start">
@@ -83,7 +119,7 @@ export default function OurIndustries() {
           ))}
         </div>
         <div className="text-center mt-5">
-          <button className="text-heading cursor-pointer mt-10  font-bold border border-primary py-3 px-7 hover:bg-primary hover:text-white transition-colors duration-300">
+          <button className="text-heading text-[16px] cursor-pointer mt-10  font-bold border border-primary py-3 px-7 hover:bg-primary hover:text-white transition-colors duration-300">
             View All Industries
           </button>
         </div>
