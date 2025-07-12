@@ -1,3 +1,4 @@
+import GlobalReach from "@/components/Homepages/GlobalReach";
 import HappyClinet from "@/components/Homepages/HappyClinet";
 import Hero from "@/components/Homepages/Hero";
 import OurIndustries from "@/components/Homepages/OurIndustries";
@@ -25,7 +26,8 @@ export default function Home() {
         <OurIndustries />
         <OurProcess />
         <HappyClinet />
-        <WhyManpower/>
+        <WhyManpower />
+        <GlobalReach />
       </Layout>
     </div>
   );
