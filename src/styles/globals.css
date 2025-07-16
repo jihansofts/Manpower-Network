@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --secendary: #171717;
+  --primary: #ecc737;
+  --heading: #000000;
+  --textColor: #202122;
+  --font-geist-mono: "IBM Plex Mono", monospace;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-primary: var(--primary);
+  --color-secendary: var(--secendary);
+  --color-heading: var(--heading);
+  --color-text: var(--textColor);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  font-family: var(--font-mono);
+}
