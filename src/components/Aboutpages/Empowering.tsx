@@ -19,13 +19,13 @@ export default function Empowering() {
 
           {/* Right Side - Text Content */}
           <div className="w-full lg:w-1/2">
-            <h4 className="text-[18px] md:text-3xl font-bold text-primary mb-4">
+            <h4 className="text-[18px] font-Inter md:text-3xl font-bold text-primary mb-4">
               ABOUT US
             </h4>
-            <h1 className="text-[48px] text-heading font-sans font-bold">
+            <h1 className="text-[48px] text-heading font-Inter font-bold">
               Empowering Businesses and Careers Since 2001
             </h1>
-            <p className="text-lg text-text font-mono mb-6 leading-relaxed">
+            <p className="text-lg font-Inter text-text font-normal mb-6 leading-relaxed">
               We are more than just a staffing agency - we are a bridge
               connecting talented professionals with businesses that value their
               skills.
@@ -48,18 +48,18 @@ export default function Empowering() {
 
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2">
-            <h4 className="text-[24px] text-heading font-sans font-bold mb-3">
+            <h4 className="text-[24px]  text-heading font-Inter font-bold mb-3">
               Committed to Connecting with Opportunity
             </h4>
-            <p className="text-lg text-text font-mono mb-8 leading-relaxed">
+            <p className="text-lg font-Inter text-text font-normal mb-8 leading-relaxed">
               We believe in the power of people. Our mission is to match top
               talent with organizations where they can thrive.
             </p>
 
-            <h4 className="text-[24px]  text-heading font-bold font-sans mb-4">
+            <h4 className="text-[24px]  text-heading font-bold font-Inter mb-4">
               A Legacy of Excellence in Staffing Solutions
             </h4>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg font-Inter font-normal text-gray-600 leading-relaxed">
               With years of experience, we&apos;ve built a reputation for
               providing reliable, customized staffing services that drive
               growth.

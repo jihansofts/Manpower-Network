@@ -6,7 +6,7 @@
   --primary: #ecc737;
   --heading: #000000;
   --textColor: #202122;
-  --font-geist-mono: "IBM Plex Mono", monospace;
+  --font-Inter: "Inter", sans-serif;
 }
 
 @theme inline {
@@ -15,10 +15,11 @@
   --color-secendary: var(--secendary);
   --color-heading: var(--heading);
   --color-text: var(--textColor);
-  --font-mono: var(--font-geist-mono);
+  --font-Inter: var(--font-Inter);
 }
 
 body {
   background: var(--background);
-  font-family: var(--font-mono);
+  color: var(--textColor);
+  font-family: var(--font-Inter);
 }

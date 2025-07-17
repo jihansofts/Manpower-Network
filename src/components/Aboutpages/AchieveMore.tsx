@@ -113,9 +113,9 @@ export default function AchieveMore() {
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
-                  className={`relative px-4 py-2 text-[20px] transition-colors ${
+                  className={`relative font-Inter font-semibold px-4 py-2 text-[20px] transition-colors ${
                     activeTab === tab
-                      ? "text-primary font-semibold"
+                      ? "text-primary  font-semibold"
                       : "text-secendary cursor-pointer hover:text-primary"
                   }`}>
                   {tab}
@@ -141,10 +141,10 @@ export default function AchieveMore() {
                 className="space-y-6">
                 {content[activeTab].items.map((item, index) => (
                   <div key={index}>
-                    <h3 className="text-[22px] font-semibold text-gray-900">
+                    <h3 className="text-[22px] font-Inter font-semibold text-gray-900">
                       {item.title}
                     </h3>
-                    <p className="text-text text-[16px] mt-1">
+                    <p className="text-text font-normal font-Inter text-[16px] mt-1">
                       {item.description}
                     </p>
                   </div>

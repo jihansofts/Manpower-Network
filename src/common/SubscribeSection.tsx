@@ -52,7 +52,7 @@ const SubscribeSection: React.FC<SubscribeSectionProps> = ({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="text-3xl md:text-4xl font-bold font-sans mb-4 leading-tight text-heading whitespace-pre-line">
+                className="text-3xl font-Inter md:text-4xl font-bold  mb-4 leading-tight text-heading whitespace-pre-line">
                 {title}
               </motion.h2>
 
@@ -60,7 +60,7 @@ const SubscribeSection: React.FC<SubscribeSectionProps> = ({
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="text-[16px] text-text mb-8">
+                className="text-[16px] font-Inter font-normal text-text mb-8">
                 {description}
               </motion.p>
             </div>
@@ -81,7 +81,7 @@ const SubscribeSection: React.FC<SubscribeSectionProps> = ({
                 />
                 <button
                   onClick={handleSubmit}
-                  className="bg-heading text-white hover:bg-secondary font-bold px-8 py-3 rounded-lg transition-colors duration-300 whitespace-nowrap">
+                  className="bg-heading font-Inter text-white hover:bg-secondary font-bold px-8 py-3 rounded-lg transition-colors duration-300 whitespace-nowrap">
                   {buttonText}
                 </button>
               </div>

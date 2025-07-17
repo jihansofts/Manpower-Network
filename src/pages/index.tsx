@@ -10,14 +10,14 @@ import Work from "@/components/Homepages/Work";
 import Layout from "@/components/layout";
 import { Inter } from "next/font/google";
 
-const geistMono = Inter({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "500", "700"], // 400=Regular, 500=Medium, 700=Bold
+  weight: ["400", "500", "700", "900"], // 400=Regular, 500=Medium, 700=Bold
 });
 
 export default function Home() {
   return (
-    <div className={` ${geistMono.className}  `}>
+    <div className={` ${inter.className}  `}>
       <Layout>
         <Hero />
         <Banner />
@@ -27,7 +27,6 @@ export default function Home() {
         <BrandCarousel />
         <SuccessStory />
         <AwardsAccreditations />
-      
       </Layout>
     </div>
   );

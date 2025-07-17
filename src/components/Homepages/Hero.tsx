@@ -31,7 +31,7 @@ const Hero = () => {
             />
           </motion.div>
           <div className="flex flex-col max-w-2xl items-end">
-            <h1 className="text-white text-4xl md:text-6xl text-end lg:text-7xl font-bold mb-6">
+            <h1 className="text-white font-Inter text-4xl md:text-6xl text-end lg:text-7xl font-extrabold mb-6">
               Discover Your Potential
             </h1>
 
@@ -48,7 +48,6 @@ const Hero = () => {
             <p className="text-white text-xl md:text-2xl font-medium mb-8">
               Workforce Solutions Provider.
             </p>
-            
 
             {/* Description */}
             <p className="text-white text-lg md:text-xl max-w-2xl mb-10">
