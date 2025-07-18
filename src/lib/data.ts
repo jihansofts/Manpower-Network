@@ -11,6 +11,17 @@ interface CountryType {
   email: string;
 }
 
+export const Industries = [
+  {
+    id: 1,
+    bg: "/images/industrius",
+    title: "Construction Workers",
+    href: "/industries/construction-workers",
+    desc: "The employment administration service for foreign workers involves managing administrative tasks related to the employment of foreign nationals by companies operating in Europe. This service is designed to help companies navigate the complexities of hiring foreign workers, ensure compliance with European immigration and labor regulations, and streamline the administrative process.",
+    image: "/images/worker.png",
+  },
+];
+
 export const countryData: CountryType[] = [
   {
     id: 1,
