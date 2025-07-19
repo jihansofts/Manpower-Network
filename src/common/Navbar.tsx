@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
+import { Industries } from "@/lib/data";
 
 type Sublink = {
   name: string;
@@ -33,24 +34,10 @@ const navLinks: NavLink[] = [
   {
     name: "Industries",
     href: "/industries", // Added href for parent link
-    sublinks: [
-      {
-        name: "Healthcare Industries",
-        href: "/healthcare-industries",
-      },
-      {
-        name: "Oil and Gas Industries",
-        href: "/oil-and-gas-industries",
-      },
-      {
-        name: "Manufacturing Industries",
-        href: "/manufacturing-industries",
-      },
-      {
-        name: "Retail Industries",
-        href: "/retail-industries",
-      },
-    ],
+    sublinks: Industries.map((item) => ({
+      name: item.title,
+      href: `/${item.href}`,
+    })),
   },
   {
     name: "Contact",

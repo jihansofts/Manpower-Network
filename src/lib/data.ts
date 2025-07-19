@@ -1,5 +1,4 @@
-// lib/data.ts
-interface CountryType {
+export interface CountryType {
   id: number;
   bgImage: string;
   name: string;
@@ -10,15 +9,128 @@ interface CountryType {
   phone: string;
   email: string;
 }
+export interface IndustrySection {
+  title: string;
+  desc: string;
+  image: string;
+}
 
-export const Industries = [
+export interface Industry {
+  id: number;
+  bg: string;
+  title: string;
+  href: string;
+  sections: IndustrySection[];
+}
+
+export const Industries: Industry[] = [
   {
     id: 1,
-    bg: "/images/industrius",
+    bg: "/images/Construction Workers.jpg",
     title: "Construction Workers",
     href: "/industries/construction-workers",
-    desc: "The employment administration service for foreign workers involves managing administrative tasks related to the employment of foreign nationals by companies operating in Europe. This service is designed to help companies navigate the complexities of hiring foreign workers, ensure compliance with European immigration and labor regulations, and streamline the administrative process.",
-    image: "/images/worker.png",
+    sections: [
+      {
+        title: "Overview",
+        desc: "We assist companies in managing foreign worker employment admin tasks in Europe.",
+        image: "/images/Construction Workers.jpg",
+      },
+      {
+        title: "Compliance & Process",
+        desc: "Ensures all legal, immigration, and labor compliance is handled efficiently.",
+        image: "/images/Construction Workers.jpg",
+      },
+    ],
+  },
+  {
+    id: 2,
+    bg: "/images/cleaning-bg.jpg",
+    title: "Cleaning Staff",
+    href: "/industries/cleaning-staff",
+    sections: [
+      {
+        title: "Service Scope",
+        desc: "We supply cleaning professionals for commercial, industrial, and residential spaces across Europe.",
+        image: "/images/cleaner1.png",
+      },
+      {
+        title: "Training & Safety",
+        desc: "Workers are trained to follow hygiene protocols, operate machinery, and use safe chemicals.",
+        image: "/images/cleaner2.png",
+      },
+    ],
+  },
+  {
+    id: 3,
+    bg: "/images/agriculture-bg.jpg",
+    title: "Agricultural Workers",
+    href: "/industries/agricultural-workers",
+    sections: [
+      {
+        title: "Seasonal Workforce",
+        desc: "Our agency provides reliable seasonal labor for farms, greenhouses, and harvesting operations.",
+        image: "/images/agriculture1.png",
+      },
+      {
+        title: "Sustainable Practices",
+        desc: "We ensure eco-friendly approaches, fair wages, and proper working conditions.",
+        image: "/images/agriculture2.png",
+      },
+    ],
+  },
+  {
+    id: 4,
+    bg: "/images/hospitality-bg.jpg",
+    title: "Hospitality Staff",
+    href: "/industries/hospitality-staff",
+    sections: [
+      {
+        title: "Hotels & Resorts",
+        desc: "We provide trained staff for housekeeping, front desk, and room service departments.",
+        image: "/images/hospitality1.png",
+      },
+      {
+        title: "Guest Experience",
+        desc: "Employees are trained in guest interaction, cultural sensitivity, and multi-language support.",
+        image: "/images/hospitality2.png",
+      },
+    ],
+  },
+  {
+    id: 5,
+    bg: "/images/warehouse-bg.jpg",
+    title: "Warehouse Workers",
+    href: "/industries/warehouse-workers",
+    sections: [
+      {
+        title: "Logistics Support",
+        desc: "We connect clients with skilled pickers, packers, forklift operators, and inventory staff.",
+        image: "/images/warehouse1.png",
+      },
+      {
+        title: "Efficiency & Safety",
+        desc: "Staff follows safety regulations and uses warehouse technology for efficient operations.",
+        image: "/images/warehouse2.png",
+      },
+    ],
+  },
+  {
+    id: 6,
+    bg: "/images/transport-bg.jpg",
+    title: "Drivers & Delivery",
+    href: "/industries/drivers-delivery",
+    sections: [
+      {
+        title: "Transport Operations",
+        desc: "We provide licensed drivers for logistics companies, public transport, and delivery services.",
+        image: "/images/driver1.png",
+      },
+      {
+        title: "Reliability & Compliance",
+        desc: "Drivers are vetted for road safety, punctuality, and route optimization knowledge.",
+        image: "/images/driver2.png",
+      },
+    ],
   },
 ];
 

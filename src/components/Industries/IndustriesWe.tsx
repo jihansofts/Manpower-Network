@@ -1,6 +1,7 @@
 import React from "react";
-
-
+import { Industries } from "@/lib/data";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function IndustriesWe() {
   return (
@@ -19,7 +20,30 @@ export default function IndustriesWe() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {Industries.map((industry) => (
+            <Link
+              key={industry.id}
+              href={industry.href}
+              className="group relative overflow-hidden  rounded-lg shadow-md hover:shadow-xl transition-all duration-300 h-96">
+              {/* Background Image */}
+              <div className="absolute inset-0 ">
+                <Image
+                  src={industry.bg}
+                  alt={`${industry.title} background`}
+                  fill
+                  className="object-cover "
+                  quality={100}
+                />
+                {/* Dark overlay for better text visibility */}
+                <div className="absolute inset-0 bg-black/30 bg-opacity-30 group-hover:bg-opacity-20 transition-all duration-300" />
+              </div>
 
+              {/* Content */}
+              <div className="relative z-10 h-full flex flex-col items-center justify-center text-center text-white p-8">
+                <h3 className="text-3xl font-bold mb-2">{industry.title}</h3>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

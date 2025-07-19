@@ -24,7 +24,7 @@ export default function CountryPage() {
     <Layout>
       <div className="relative h-screen bg-[#201D1F] overflow-hidden">
         <Head>
-          <title>{countryInfo.city} | Your Company</title>
+          <title>{countryInfo.city} | We Provide</title>
         </Head>
         <div className="absolute inset-0 z-0">
           <Image
