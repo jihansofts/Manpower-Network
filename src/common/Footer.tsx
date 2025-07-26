@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { Industries } from "@/lib/data";
 
 export default function Footer() {
   return (
@@ -18,29 +19,29 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
+                  href="/about"
+                  className="hover:text-primary transition-colors">
                   About us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Specialisms
+                  href="/services"
+                  className="hover:text-primary transition-colors">
+                  Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Industry
+                  href="/industries"
+                  className="hover:text-primary transition-colors">
+                  Industries
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
+                  href="/contact"
+                  className="hover:text-primary transition-colors">
                   Contact
                 </Link>
               </li>
@@ -48,63 +49,44 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="font-bold text-primary mb-4">
-              Technology jobs by location
-            </h3>
+            <h3 className="font-bold text-primary mb-4">Industries</h3>
             <ul className="space-y-2">
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  London
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  New York
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Berlin
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Singapore
-                </Link>
-              </li>
+              {Industries.map((industry) => (
+                <li key={industry.id}>
+                  <Link
+                    href={industry.href}
+                    className="hover:text-primary transition-colors">
+                    {industry.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           <div>
             <h3 className="font-bold text-primary mb-4">Contact Info</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-2 text-white font-medium">
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Email us
+                  href="mailto:contact@hydraaesthetics.com"
+                  className="hover:text-primary transition-colors">
+                  contact@hydraaesthetics.com
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Call us
+                  href="tel:+1234567890"
+                  className="hover:text-primary transition-colors">
+                  +1 (234) 567-890
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
-                  className="hover:text-gray-900 transition-colors">
-                  Location
+                  href="https://maps.google.com/?q=8205+Santa+Monica+Blvd,+Santa+Monica,+CA+90046"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors">
+                  8205 Santa Monica Blvd, Santa Monica, CA
                 </Link>
               </li>
             </ul>
@@ -113,12 +95,14 @@ export default function Footer() {
 
         {/* Bottom section */}
         <div className="border-t border-gray-300 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-center">
             <div className="mb-4 md:mb-0">
-              <p className="text-sm">© 2025 Source Group International.</p>
+              <p className="text-[20px]">
+                © 2025 Manpower Network International.
+              </p>
             </div>
 
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <Link
                 href="#"
                 className="text-sm hover:text-gray-900 transition-colors">
@@ -154,13 +138,7 @@ export default function Footer() {
                 className="text-sm hover:text-gray-900 transition-colors">
                 EAA Statement
               </Link>
-            </div>
-          </div>
-
-          <div className="mt-4">
-            <p className="text-sm">
-              Site by <span className="font-bold">SOURCEPLOT™</span>
-            </p>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,17 +1,12 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
+import { Industries } from "../../lib/data";
+import Link from "next/link";
 
 const Specialisms = () => {
-  const specialisms = [
-    { name: "Hotel Manager" },
-    { name: "Receptionist" },
-    { name: "Housekeeping Staff" },
-    { name: "Restaurant Server" },
-    { name: "Chef" },
-    { name: "Factory Worker" },
-    { name: "Construction Worker" },
-    { name: "Electrician" },
-  ];
+  const specialisms = Industries;
+
+  // Define a set of gradients to use for the text
 
   const gradients = [
     "from-purple-500 via-pink-500 to-red-500",
@@ -29,7 +24,7 @@ const Specialisms = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 border-b-4 border-[#44B6DA] inline-block pb-2">
-            Specialisms.
+            Industries
           </h2>
           <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
             We specialism in niche tech staffing, connecting top talent with the
@@ -39,7 +34,8 @@ const Specialisms = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {specialisms.map((item, index) => (
-            <div
+            <Link
+              href={item.href}
               key={index}
               className="p-6 bg-white min-w-[200px] flex flex-col items-center min-h-[200px] rounded-lg hover:bg-gray-100 transition-colors duration-200 relative">
               {/* Arrow icon in top right */}
@@ -52,9 +48,9 @@ const Specialisms = () => {
                 className={`text-[25px] text-center font-extrabold bg-gradient-to-r ${
                   gradients[index % gradients.length]
                 } bg-clip-text text-transparent text-center mt-12`}>
-                {item.name}
+                {item.title}
               </h3>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
