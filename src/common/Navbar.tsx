@@ -32,6 +32,10 @@ const navLinks: NavLink[] = [
     href: "/services",
   },
   {
+    name: "For Employers",
+    href: "/employees",
+  },
+  {
     name: "Industries",
     href: "/industries", // Added href for parent link
     sublinks: Industries.map((item) => ({

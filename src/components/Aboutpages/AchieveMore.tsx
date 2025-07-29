@@ -5,8 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import AdsHeadline from "@/common/AdsHeadline";
 import SubscribeSection from "@/common/SubscribeSection";
 
-
-
 export default function AchieveMore() {
   const logos = [
     "/logos/luminor.png",
@@ -110,21 +108,21 @@ export default function AchieveMore() {
           {/* Right Side - Tabs & Content */}
           <div className="w-full lg:w-1/2">
             {/* Tabs */}
-            <div className="flex space-x-4 space-y-4">
+            <div className=" space-x-4 space-y-4">
               {Object.keys(content).map((tab) => (
                 <button
                   key={tab}
                   onClick={() => setActiveTab(tab)}
                   className={`relative font-Inter font-semibold px-4 py-2 text-[20px] transition-colors ${
                     activeTab === tab
-                      ? "text-primary  font-semibold"
+                      ? "text-primary   font-semibold"
                       : "text-secendary cursor-pointer hover:text-primary"
                   }`}>
                   {tab}
                   {activeTab === tab && (
                     <motion.div
                       layoutId="underline"
-                      className="absolute bottom-0 left-0 right-0 h-[3px] bg-primary rounded-full"
+                      className="absolute flex justify-center items-center bottom-0 left-0 right-0 h-[3px] bg-primary rounded-full"
                       transition={{ type: "spring", duration: 0.6 }}
                     />
                   )}
