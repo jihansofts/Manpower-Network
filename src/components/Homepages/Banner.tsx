@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 export default function Banner() {
   return (
     <section className="bg-primary py-20">
@@ -30,9 +31,11 @@ export default function Banner() {
               With SGI, workforce management becomes streamlined, scalable, and
               smart.
             </p>
-            <button className="bg-heading cursor-pointer text-white px-8 py-4 rounded-lg mt-4 text-[20px] font-bold">
+            <Link
+              href="/about"
+              className="bg-heading cursor-pointer text-white px-8 py-4 rounded-lg mt-4 text-[20px] font-bold">
               More About Us →
-            </button>
+            </Link>
           </div>
         </div>
       </div>

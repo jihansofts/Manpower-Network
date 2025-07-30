@@ -7,6 +7,7 @@ import { TbArrowLeftRight } from "react-icons/tb";
 import { AiTwotoneSafetyCertificate } from "react-icons/ai";
 import { HiOutlineDocumentReport } from "react-icons/hi";
 import Link from "next/link";
+import AdsHeadline from "@/common/AdsHeadline";
 const selection = [
   {
     icons: <LuUserSearch className="text-2xl text-white" />,
@@ -40,6 +41,22 @@ const Business = [
     title: "Payroll calculation",
     desc: "Professional and high-quality care of the entire payroll process and frequent changes in regulations.",
   },
+];
+
+const logos = [
+  "/images/worker1.jpg",
+  "/images/worker2.jpg",
+  "/images/worker3.jpg",
+  "/images/worker4.jpg",
+  "/images/worker5.jpg",
+  "/images/worker6.jpg",
+  "/images/worker7.jpg",
+  "/images/worker8.jpg",
+  "/images/worker9.jpg",
+  "/images/worker10.jpg",
+  "/images/worker11.jpg",
+  "/images/worker12.jpg",
+  "/images/worker13.jpg",
 ];
 export default function Recruitment() {
   return (
@@ -149,6 +166,14 @@ export default function Recruitment() {
           ))}
         </div>
       </div>
+      <AdsHeadline
+        title="Workers"
+        titleClassName="text-white"
+        logos={logos}
+        logoWidth={300}
+        fadeWidth={120}
+        className="mt-10"
+      />
     </section>
   );
 }

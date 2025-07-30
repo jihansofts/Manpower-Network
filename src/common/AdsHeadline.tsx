@@ -14,6 +14,7 @@ interface BrandMarqueeProps {
   pauseOnHover?: boolean;
   className?: string;
   titleClassName?: string;
+  bgColor?: string;
   gap?: number;
   fadeEdges?: boolean;
   fadeWidth?: number;
@@ -21,6 +22,7 @@ interface BrandMarqueeProps {
 
 const BrandMarquee: React.FC<BrandMarqueeProps> = ({
   title = "",
+  bgColor = "",
   logos,
   logoWidth = 120,
   logoHeight = 60,
@@ -30,14 +32,12 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
   className = "",
   titleClassName = "",
   gap = 32,
-  fadeEdges = true,
-  fadeWidth = 96,
 }) => {
-  const doubledLogos = [...logos, ...logos]; // for infinite scroll effect
+  const doubledLogos = [...logos]; // for infinite scroll effect
 
   return (
     <section
-      className={`py-16 bg-gray-50 relative overflow-hidden ${className}`}>
+      className={`py-16 ${bgColor} relative overflow-hidden ${className}`}>
       <div className="container mx-auto px-4">
         {/* Animated Heading */}
         {title && (
@@ -77,14 +77,14 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
                   alt={`Logo ${i}`}
                   width={logoWidth}
                   height={logoHeight}
-                  className="object-contain max-h-full"
+                  className="object-contain max-h-full max-w-full"
                 />
               </div>
             ))}
           </motion.div>
 
           {/* Fading edge gradients */}
-          {fadeEdges && (
+          {/* {fadeEdges && (
             <>
               <div
                 className="absolute inset-y-0 left-0 z-10"
@@ -101,7 +101,7 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
                 }}
               />
             </>
-          )}
+          )} */}
         </div>
       </div>
     </section>
