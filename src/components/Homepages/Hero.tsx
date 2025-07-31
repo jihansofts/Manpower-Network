@@ -64,9 +64,11 @@ const Hero = () => {
                 className="bg-primary cursor-pointer text-heading hover:bg-primary hover:text-white px-8 py-3 rounded-md font-semibold transition-colors duration-200">
                 Contact Us
               </Link>
-              <button className="bg-transparent cursor-pointer border-2 border-primary text-white hover:bg-primary hover:text-heading px-8 py-3 rounded-md font-semibold transition-colors duration-200">
-                Hire Tech Experts →
-              </button>
+              <Link
+                href="/industries"
+                className="bg-transparent cursor-pointer border-2 border-primary text-white hover:bg-primary hover:text-heading px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                Hire worker Experts →
+              </Link>
             </div>
           </div>
         </div>
