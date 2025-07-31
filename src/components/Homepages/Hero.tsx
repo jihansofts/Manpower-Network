@@ -23,7 +23,7 @@ const Hero = () => {
             animate={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}>
             <Image
-              src="/logo.png"
+              src="/images/home.png"
               alt="hero"
               width={500}
               height={500}
