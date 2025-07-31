@@ -1,37 +1,77 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
+
+const images = [
+  "/images/nurse.jpg",
+  "/images/hotel-staff.jpg",
+  "/images/supershop.jpg",
+  "/images/construction.jpg",
+  "/images/rajmistry.jpg",
+  "/images/workeriron.jpg",
+];
+
 export default function OurService() {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4000); // Slide every 4 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="py-20 bg-[#201D1F]">
       <div className="container max-w-7xl mx-auto px-5">
+        {/* Section Heading */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-Inter   md:text-5xl font-bold text-white mb-4 inline-block border-b-4 border-primary pb-2">
+          <h2 className="text-4xl font-Inter md:text-5xl font-bold text-white mb-4 inline-block border-b-4 border-primary pb-2">
             Our Services
           </h2>
           <p className="text-[32px] font-Inter font-bold md:text-xl text-white/80 max-w-2xl mx-auto">
-            We offer a wide range of services to help businesses find the best
-            talent for their team.
+            We connect your business with reliable, skilled non-desk
+            professionals.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-1 justify-center items-center lg:grid-cols-2 gap-12">
+
+        {/* Content */}
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Content */}
           <div>
             <h4 className="text-[32px] font-Inter font-bold text-white mb-4">
-              Bridge for industrial and corporate development.
+              Talent that keeps your business moving.
             </h4>
-            <p className=" text-white font-Inter font-normal mb-6">
-              Donec class lacinia vel hac laoreet amet et dictumst suspendisse.
-              Maximus tortor pede egestas quis facilisis est. Neque dis
-              fringilla augue mollis viverra enim conubia pulvinar.
+            <p className="text-white font-Inter font-normal mb-6">
+              From hospitality and healthcare to logistics and facilities, we
+              specialize in hiring frontline staff. Whether you need hotel
+              managers, nurses, retail clerks, or cleaners — we help you build a
+              strong, dedicated workforce where it matters most.
             </p>
           </div>
-          <div>
-            <Image
-              src="/images/patner.png" // Replace with your image path
-              alt="Our Team"
-              width={400}
-              height={400}
-              className="rounded-lg shadow-xl object-cover w-full h-auto"
-            />
+
+          {/* Right Image Slider with Framer Motion */}
+          <div className="relative overflow-hidden rounded-xl shadow-xl h-[400px]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={images[currentImage]}
+                initial={{ opacity: 0, x: 50 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -50 }}
+                transition={{ duration: 0.8 }}
+                className="absolute inset-0 w-full h-full">
+                <Image
+                  src={images[currentImage]}
+                  alt="Frontline workers"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+                <div className="absolute bottom-0 bg-black/40 text-white p-4 w-full text-center text-lg font-semibold">
+                  Frontline Workforce — {currentImage + 1} / {images.length}
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
       </div>

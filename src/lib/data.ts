@@ -19,6 +19,7 @@ export interface Industry {
   id: number;
   bg: string;
   title: string;
+  shortdesc: string;
   href: string;
   sections: IndustrySection[];
 }
@@ -26,8 +27,10 @@ export interface Industry {
 export const Industries: Industry[] = [
   {
     id: 1,
-    bg: "/images/Construction Workers.jpg",
+    bg: "/images/Constructionbanner.jpg",
     title: "Construction Workers",
+    shortdesc:
+      "We assist companies in managing foreign worker employment admin tasks in Europe.",
     href: "/industries/construction-workers",
     sections: [
       {
@@ -46,6 +49,8 @@ export const Industries: Industry[] = [
     id: 2,
     bg: "/images/cleaning-bg.jpg",
     title: "Cleaning Staff",
+    shortdesc:
+      "We supply cleaning professionals for commercial, industrial, and residential spaces across Europe.",
     href: "/industries/cleaning-staff",
     sections: [
       {
@@ -62,73 +67,101 @@ export const Industries: Industry[] = [
   },
   {
     id: 3,
-    bg: "/images/agriculture-bg.jpg",
+    bg: "/images/seasonalbanner.jpg",
     title: "Agricultural Workers",
+    shortdesc:
+      "Our agency provides reliable seasonal labor for farms, greenhouses, and harvesting operations.",
     href: "/industries/agricultural-workers",
     sections: [
       {
         title: "Seasonal Workforce",
         desc: "Our agency provides reliable seasonal labor for farms, greenhouses, and harvesting operations.",
-        image: "/images/agriculture1.png",
+        image: "/images/seasonal1",
       },
       {
         title: "Sustainable Practices",
         desc: "We ensure eco-friendly approaches, fair wages, and proper working conditions.",
-        image: "/images/agriculture2.png",
+        image: "/images/seasonal2",
+      },
+      {
+        title: "Compliance & Compliance",
+        desc: "Ensures all legal, immigration, and labor compliance is handled efficiently.",
+        image: "/images/seasonal3",
       },
     ],
   },
   {
     id: 4,
-    bg: "/images/hospitality-bg.jpg",
-    title: "Hospitality Staff",
+    bg: "/images/hotelsbanner.jpg",
+    title: "Hotel Workers",
+    shortdesc:
+      "We provide trained staff for housekeeping, front desk, and room service departments.",
     href: "/industries/hospitality-staff",
     sections: [
       {
         title: "Hotels & Resorts",
         desc: "We provide trained staff for housekeeping, front desk, and room service departments.",
-        image: "/images/hospitality1.png",
+        image: "/images/hotels1.jpg",
       },
       {
         title: "Guest Experience",
         desc: "Employees are trained in guest interaction, cultural sensitivity, and multi-language support.",
-        image: "/images/hospitality2.png",
+        image: "/images/hotels2.jpg",
+      },
+      {
+        title: "Compliance & Compliance",
+        desc: "Ensures all legal, immigration, and labor compliance is handled efficiently.",
+        image: "/images/hotels3.jpg",
       },
     ],
   },
   {
     id: 5,
-    bg: "/images/warehouse-bg.jpg",
+    bg: "/images/warehousebanner.jpg",
     title: "Warehouse Workers",
+    shortdesc:
+      "We connect clients with skilled pickers, packers, forklift operators, and inventory staff.",
     href: "/industries/warehouse-workers",
     sections: [
       {
         title: "Logistics Support",
         desc: "We connect clients with skilled pickers, packers, forklift operators, and inventory staff.",
-        image: "/images/warehouse1.png",
+        image: "/images/warehouse1.jpg",
       },
       {
         title: "Efficiency & Safety",
         desc: "Staff follows safety regulations and uses warehouse technology for efficient operations.",
-        image: "/images/warehouse2.png",
+        image: "/images/warehouse2.jpg",
+      },
+      {
+        title: "Compliance & Compliance",
+        desc: "Ensures all legal, immigration, and labor compliance is handled efficiently.",
+        image: "/images/warehouse3.jpg",
       },
     ],
   },
   {
     id: 6,
-    bg: "/images/transport-bg.jpg",
+    bg: "/images/drivingbanner.jpg",
     title: "Drivers & Delivery",
+    shortdesc:
+      "We provide licensed drivers for logistics companies, public transport, and delivery services.",
     href: "/industries/drivers-delivery",
     sections: [
       {
         title: "Transport Operations",
         desc: "We provide licensed drivers for logistics companies, public transport, and delivery services.",
-        image: "/images/driver1.png",
+        image: "/images/driving1.jpg",
       },
       {
         title: "Reliability & Compliance",
         desc: "Drivers are vetted for road safety, punctuality, and route optimization knowledge.",
-        image: "/images/driver2.png",
+        image: "/images/driving2.jpg",
+      },
+      {
+        title: "Safety & Compliance",
+        desc: "Drivers are trained in safety protocols, road rules, and compliance with regulations.",
+        image: "/images/driving3.jpg",
       },
     ],
   },

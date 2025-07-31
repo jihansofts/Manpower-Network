@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import AdsHeadline from "@/common/AdsHeadline";
-import SubscribeSection from "@/common/SubscribeSection";
+// import SubscribeSection from "@/common/SubscribeSection";
 
 export default function AchieveMore() {
   const logos = [
@@ -154,7 +154,7 @@ export default function AchieveMore() {
           </div>
         </div>
         <div className="mt-10">
-          <SubscribeSection
+          {/* <SubscribeSection
             title="Transform Your Workforce  Transform Your Future"
             description="Ready to take the next step? Whether you're looking to build your dream team or find the perfect career."
             buttonText="SUBSCRIBE"
@@ -165,7 +165,7 @@ export default function AchieveMore() {
               console.log("Subscribed:", email);
               // Call API or handle logic
             }}
-          />
+          /> */}
         </div>
       </div>
       <div className="mt-5">

@@ -19,15 +19,15 @@ export default function ServiceHero() {
         {/* Main Heading */}
         <div className="text-start">
           <h1 className="text-5xl capitalize font-Inter md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            <span className="block">Ready to join? Apply for </span>
-            <span className="block">a job today!</span>
+            <span className="block">Ready for your next </span>
+            <span className="block">opportunity?</span>
           </h1>
         </div>
 
         {/* Subtitle */}
         <p className="text-lg text-start  font-Inter md:text-xl lg:text-2xl text-white max-w-2xl mb-10">
-          Escape the normal recruitment career, and jump into an experience
-          that&apos;ll build and nurture your professional future.
+          From hospitals to hotels, we help you find work where you&apos;re needed
+          most — and where you can grow.
         </p>
 
         {/* CTA Button */}

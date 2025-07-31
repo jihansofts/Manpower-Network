@@ -19,7 +19,7 @@ export default function Banner() {
               className="lg:w-[700px] w-full md:w-[500px] rounded-2xl h-auto "
             />
           </motion.div>
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h2 className="text-heading text-start lg:text-[56px] md:text-[32px] text-[24px] font-bold ">
               Empowering Innovation with Expert Talent
             </h2>
@@ -27,13 +27,13 @@ export default function Banner() {
               Discovering technology talent to deliver your goals, and creating
               value for your business.
             </p>
-            <p className="text-text text-start text-[16px] font-normal ">
+            <p className="text-text text-start text-[16px] mb-4 font-normal ">
               With SGI, workforce management becomes streamlined, scalable, and
               smart.
             </p>
             <Link
               href="/about"
-              className="bg-heading cursor-pointer text-white px-8 py-4 rounded-lg mt-4 text-[20px] font-bold">
+              className="bg-heading  mt-8 max-w-2xs flex justify-center  cursor-pointer text-white px-8 py-4 rounded-lg  text-[20px] font-bold">
               More About Us →
             </Link>
           </div>

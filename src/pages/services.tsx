@@ -8,8 +8,8 @@ export default function services() {
   return (
     <Layout>
       <ServiceHero />
+      <WeProvide />
       <OurService />
-      <WeProvide/>
     </Layout>
   );
 }

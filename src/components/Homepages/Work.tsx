@@ -1,6 +1,7 @@
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Work() {
   return (
@@ -28,9 +29,11 @@ export default function Work() {
               height={500}
               className="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
-            <button className="absolute bottom-6 right-6 bg-sky-400 text-black font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-sky-500 transition">
+            <Link
+              href="/industries"
+              className="absolute bottom-6 right-6 bg-sky-400 text-black font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-sky-500 transition">
               Staffing <FiArrowRight />
-            </button>
+            </Link>
           </div>
 
           {/* Outsourcing Card */}
@@ -42,9 +45,11 @@ export default function Work() {
               height={500}
               className="w-full h-full object-cover hover:scale-105 transition duration-500"
             />
-            <button className="absolute bottom-6 right-6 bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
+            <Link
+              href="/industries"
+              className="absolute bottom-6 right-6 bg-yellow-400 text-black font-semibold px-6 py-3 rounded-full flex items-center gap-2 hover:bg-yellow-500 transition">
               Outsourcing <FiArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
       </div>
