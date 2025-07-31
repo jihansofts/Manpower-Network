@@ -24,7 +24,7 @@ const BrandMarquee = () => {
   const doubledLogos = [...logos]; // for infinite scroll effect
 
   return (
-    <section className="py-16 bg-gray-50 relative overflow-hidden">
+    <section className="py-16 bg-primary relative overflow-hidden">
       <AdsHeadline title="Our Customers" logos={doubledLogos} />
     </section>
   );

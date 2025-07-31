@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const reviews = [
   {
@@ -58,9 +59,11 @@ const WhyOurCustomers = () => {
               Why Our Customers Work With Us.
             </h2>
             <div className="w-20 h-1 bg-white mb-8"></div>
-            <button className="inline-block text-white border-2 border-primary py-4 px-8 cursor-pointer font-semibold hover:underline text-lg">
+            <Link
+              href="/reviews"
+              className="inline-block text-white border-2 border-primary py-4 px-8 cursor-pointer font-semibold hover:underline text-lg">
               Customer Reviews →
-            </button>
+            </Link>
           </div>
 
           {/* Right Side - Reviews Carousel */}

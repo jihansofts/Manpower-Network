@@ -47,7 +47,7 @@ export const Industries: Industry[] = [
   },
   {
     id: 2,
-    bg: "/images/cleaning-bg.jpg",
+    bg: "/images/cleaningbanner.jpg",
     title: "Cleaning Staff",
     shortdesc:
       "We supply cleaning professionals for commercial, industrial, and residential spaces across Europe.",
@@ -56,12 +56,17 @@ export const Industries: Industry[] = [
       {
         title: "Service Scope",
         desc: "We supply cleaning professionals for commercial, industrial, and residential spaces across Europe.",
-        image: "/images/cleaner1.png",
+        image: "/images/cleaning1.jpg",
       },
       {
         title: "Training & Safety",
         desc: "Workers are trained to follow hygiene protocols, operate machinery, and use safe chemicals.",
-        image: "/images/cleaner2.png",
+        image: "/images/cleaning2.jpg",
+      },
+      {
+        title: "Compliance & Process",
+        desc: "Ensures all legal, immigration, and labor compliance is handled efficiently.",
+        image: "/images/cleaning3.jpg",
       },
     ],
   },
