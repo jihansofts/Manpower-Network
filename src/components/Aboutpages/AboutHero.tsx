@@ -32,7 +32,7 @@ export default function AboutHero() {
 
         {/* CTA Button */}
         <Link
-          href="#apply"
+          href="/contact"
           className="bg-white font-Inter font-bold text-[#201D1F] px-8 py-4 rounded-md  text-lg hover:bg-primary transition-colors duration-300">
           Apply Here
         </Link>

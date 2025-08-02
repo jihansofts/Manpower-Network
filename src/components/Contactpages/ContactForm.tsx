@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
+import { Industries } from "@/lib/data";
 
 export default function ContactForm() {
   return (
@@ -9,19 +10,32 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div>
             <h2 className="text-3xl font-bold mb-8 uppercase">Contact Form</h2>
-
             <form className="space-y-6">
+              <select
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                name="industry"
+                defaultValue="">
+                <option value="" disabled>
+                  Select Industry
+                </option>
+                {Industries.map((industry) => (
+                  <option key={industry.id} value={industry.id}>
+                    {industry.title}
+                  </option>
+                ))}
+              </select>
+
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                   <label
                     htmlFor="firstName"
-                    className="block text-sm font-medium mb-2">
+                    className="block text-[18px] font-medium mb-2">
                     First Name *
                   </label>
                   <input
                     type="text"
                     id="firstName"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#d6b36b] focus:border-transparent"
+                    className="w-full px-4 outline-none py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                     required
                   />
                 </div>
@@ -29,13 +43,13 @@ export default function ContactForm() {
                 <div>
                   <label
                     htmlFor="lastName"
-                    className="block text-sm font-medium mb-2">
+                    className="block text-[18px] font-medium mb-2">
                     Last Name *
                   </label>
                   <input
                     type="text"
                     id="lastName"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#d6b36b] focus:border-transparent"
+                    className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                     required
                   />
                 </div>
@@ -44,13 +58,13 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="phone"
-                  className="block text-sm font-medium mb-2">
+                  className="block text-[18px] font-medium mb-2">
                   Mobile Phone *
                 </label>
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#d6b36b] focus:border-transparent"
+                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                   required
                 />
               </div>
@@ -58,13 +72,13 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium mb-2">
+                  className="block text-[18px] font-medium mb-2">
                   Email *
                 </label>
                 <input
                   type="email"
                   id="email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#d6b36b] focus:border-transparent"
+                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                   required
                 />
               </div>
@@ -72,19 +86,19 @@ export default function ContactForm() {
               <div>
                 <label
                   htmlFor="message"
-                  className="block text-sm font-medium mb-2">
+                  className="block text-[18px] font-medium mb-2">
                   Message
                 </label>
                 <textarea
                   id="message"
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#d6b36b] focus:border-transparent"></textarea>
+                  className="w-full px-4 py-3 border outline-none border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"></textarea>
               </div>
 
               <button
                 type="submit"
-                className="flex items-center justify-center gap-2 px-6 py-3 bg-[#d6b36b] text-white font-medium rounded-lg hover:bg-[#c9a45f] transition-colors">
-                Submit <FaPaperPlane className="inline" />
+                className="flex items-center cursor-pointer justify-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/80 transition-colors">
+                Apply Job <FaPaperPlane className="inline" />
               </button>
             </form>
           </div>

@@ -8,8 +8,8 @@ export default function contact() {
   return (
     <Layout>
       <ContactHero />
-      <ContactCountry />
       <ContactForm />
+      <ContactCountry />
     </Layout>
   );
 }

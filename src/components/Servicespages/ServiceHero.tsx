@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ServiceHero() {
   return (
@@ -31,11 +32,11 @@ export default function ServiceHero() {
         </p>
 
         {/* CTA Button */}
-        {/* <Link
-          href="#apply"
+        <Link
+          href="/contact"
           className="bg-white font-Inter font-bold text-[#201D1F] px-8 py-4 rounded-md  text-lg hover:bg-primary transition-colors duration-300">
           Apply Here
-        </Link> */}
+        </Link>
       </div>
     </section>
   );
