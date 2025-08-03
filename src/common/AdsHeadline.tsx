@@ -24,7 +24,7 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
   title = "",
   bgColor = "",
   logos,
-  logoWidth = 120,
+  logoWidth = 200,
   logoHeight = 60,
   speed = 25,
   direction = "left",
@@ -77,31 +77,11 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
                   alt={`Logo ${i}`}
                   width={logoWidth}
                   height={logoHeight}
-                  className="object-contain max-h-full max-w-full"
+                  className="object-contain w-full h-full"
                 />
               </div>
             ))}
           </motion.div>
-
-          {/* Fading edge gradients */}
-          {/* {fadeEdges && (
-            <>
-              <div
-                className="absolute inset-y-0 left-0 z-10"
-                style={{
-                  width: `${fadeWidth}px`,
-                  background: "linear-gradient(to right, #f9fafb, transparent)",
-                }}
-              />
-              <div
-                className="absolute inset-y-0 right-0 z-10"
-                style={{
-                  width: `${fadeWidth}px`,
-                  background: "linear-gradient(to left, #f9fafb, transparent)",
-                }}
-              />
-            </>
-          )} */}
         </div>
       </div>
     </section>

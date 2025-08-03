@@ -27,7 +27,7 @@ export interface Industry {
 export const Industries: Industry[] = [
   {
     id: 1,
-    bg: "/images/constructionbanner.jpg",
+    bg: "/images/Construcitonbg.jpg",
     title: "Construction Workers",
     shortdesc:
       "We supply skilled labor for commercial and residential construction projects across Europe. Our workforce includes trained professionals capable of handling everything from groundwork to finishing work, ensuring on-time delivery and adherence to European safety standards.",
@@ -36,17 +36,17 @@ export const Industries: Industry[] = [
       {
         title: "Skilled Workforce",
         desc: "We connect clients with experienced masons, carpenters, electricians, and general laborers who are well-versed in modern construction practices. Our workers are trained to meet the high standards required in both residential and commercial building sites across Europe, ensuring durability and efficiency in all aspects of the job.",
-        image: "/images/construction1.jpg",
+        image: "/images/construciton1.jpg",
       },
       {
         title: "Compliance & Process",
         desc: "We manage every aspect of legal compliance, including work permits, labor laws, and health and safety regulations. Our team ensures that all workers meet immigration requirements and that operations follow European labor standards. This guarantees a smooth process from recruitment to site deployment.",
-        image: "/images/construction2.jpg",
+        image: "/images/construciton2.jpg",
       },
       {
         title: "Project Management",
         desc: "From initial planning to final delivery, we provide comprehensive project management support. Our supervisors coordinate tasks, manage timelines, and ensure that safety protocols are strictly followed. With our hands-on approach, clients can rely on us to deliver high-quality construction outcomes on time and within budget.",
-        image: "/images/construction3.jpg",
+        image: "/images/construciton3.jpg",
       },
     ],
   },
@@ -68,31 +68,41 @@ export const Industries: Industry[] = [
         desc: "Workers follow international hygiene standards and protocols.",
         image: "/images/cleaning2.jpg",
       },
+      {
+        title: "Safety & Compliance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/cleaning3.jpg",
+      },
     ],
   },
   {
     id: 3,
-    bg: "/images/hospitalitybanner.jpg",
+    bg: "/images/Hotel, Restaurant bg.jpg",
     title: "Hotel & Restaurant",
     shortdesc:
       "We provide front desk, housekeeping, culinary, and serving staff for hospitality businesses.",
     href: "/industries/hotel-restaurant",
     sections: [
       {
-        title: "Hospitality Experts",
+        title: "Experienced Experts",
         desc: "From chefs to waiters, we provide experienced hotel and restaurant staff.",
-        image: "/images/hospitality1.jpg",
+        image: "/images/Hotel, Restaurant 1.jpg",
       },
       {
         title: "Guest Satisfaction",
         desc: "Employees are trained in cultural etiquette, multilingual communication, and guest experience.",
-        image: "/images/hospitality2.jpg",
+        image: "/images/Hotel, Restaurant 2.jpg",
+      },
+      {
+        title: "Safety & Compliance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/Hotel, Restaurant 3.jpg",
       },
     ],
   },
   {
     id: 4,
-    bg: "/images/furniturebanner.jpg",
+    bg: "/images/wood and furniture bg.jpg",
     title: "Wood & Furniture",
     shortdesc:
       "We offer skilled woodworkers and furniture manufacturers for industrial and custom projects.",
@@ -101,12 +111,17 @@ export const Industries: Industry[] = [
       {
         title: "Craftsmanship",
         desc: "Experienced carpenters, polishers, and joiners for high-quality output.",
-        image: "/images/furniture1.jpg",
+        image: "/images/wood and furniture 1.jpg",
       },
       {
         title: "Factory Setup",
         desc: "Staff trained for both manual and machine-based furniture production.",
-        image: "/images/furniture2.jpg",
+        image: "/images/wood and furniture 2.jpg",
+      },
+      {
+        title: "Safety & Compliance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/wood and furniture 3.jpg",
       },
     ],
   },

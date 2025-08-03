@@ -70,7 +70,7 @@ export default function Footer() {
                 <Link
                   href="mailto:contact@hydraaesthetics.com"
                   className="hover:text-primary transition-colors">
-                  contact@hydraaesthetics.com
+                  contact@manpowernetworkinternational.com
                 </Link>
               </li>
               <li>
@@ -86,7 +86,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors">
-                  8205 Santa Monica Blvd, Santa Monica, CA
+                  Uk Office: 8205 Santa Monica Blvd, Santa Monica, CA 90046
                 </Link>
               </li>
             </ul>

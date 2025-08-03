@@ -1,3 +1,4 @@
+import BrandMarquee from "@/common/AdsHeadline";
 import Layout from "@/components/layout";
 import { Industries } from "@/lib/data";
 import Image from "next/image";
@@ -7,6 +8,21 @@ interface Props {
   industry: (typeof Industries)[number];
 }
 
+const logos = [
+  "/images/worker1.jpg",
+  "/images/worker2.jpg",
+  "/images/worker3.jpg",
+  "/images/worker4.jpg",
+  "/images/worker5.jpg",
+  "/images/worker6.jpg",
+  "/images/worker7.jpg",
+  "/images/worker8.jpg",
+  "/images/worker9.jpg",
+  "/images/worker10.jpg",
+  "/images/worker11.jpg",
+  "/images/worker12.jpg",
+  "/images/worker13.jpg",
+];
 export default function IndustryDetail({ industry }: Props) {
   return (
     <Layout>
@@ -42,10 +58,20 @@ export default function IndustryDetail({ industry }: Props) {
         </div>
       </section>
       <div className="bg-[#201D1F] py-20">
+        <BrandMarquee
+          title="Our Customers"
+          logos={logos}
+          logoWidth={140}
+          logoHeight={80}
+          bgColor="bg-[#201D1F]"
+          speed={20}
+          gap={40}
+          className="text-white"
+        />
         <div className="max-w-6xl mx-auto px-4 py-16 space-y-16 ">
-          <h1 className="text-[40px] text-white font-Inter font-bold text-center">
+          {/* <h1 className="text-[40px] text-white font-Inter font-bold text-center">
             {industry.title}
-          </h1>
+          </h1> */}
 
           {industry.sections.map((section, index) => (
             <div
