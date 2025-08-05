@@ -8,16 +8,10 @@ import WhyOurCustomers from "@/components/Homepages/WhyOurCustomers";
 import Work from "@/components/Homepages/Work";
 
 import Layout from "@/components/layout";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "900"], // 400=Regular, 500=Medium, 700=Bold
-});
 
 export default function Home() {
   return (
-    <div className={` ${inter.className}  `}>
+    <div>
       <Layout>
         <Hero />
         <Banner />

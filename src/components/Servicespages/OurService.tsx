@@ -28,7 +28,7 @@ export default function OurService() {
         {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-Inter md:text-5xl font-bold text-white mb-4 inline-block border-b-4 border-primary pb-2">
-            Our Services
+            What We Offer
           </h2>
           <p className="text-[32px] font-Inter font-bold md:text-xl text-white/80 max-w-2xl mx-auto">
             We connect your business with reliable, skilled non-desk
@@ -41,13 +41,15 @@ export default function OurService() {
           {/* Left Content */}
           <div>
             <h4 className="text-[32px] font-Inter font-bold text-white mb-4">
-              Talent that keeps your business moving.
+              Skilled talent that powers every industry.
             </h4>
             <p className="text-white font-Inter font-normal mb-6">
-              From hospitality and healthcare to logistics and facilities, we
-              specialize in hiring frontline staff. Whether you need hotel
-              managers, nurses, retail clerks, or cleaners — we help you build a
-              strong, dedicated workforce where it matters most.
+              We connect businesses with reliable workers across essential
+              sectors — from construction, cleaning, and hospitality to
+              healthcare, logistics, manufacturing, and more. Whether you&apos;re
+              looking for factory staff, hotel and restaurant teams, transport
+              operators, or healthcare professionals, we deliver talent that
+              keeps your operations running smoothly.
             </p>
           </div>
 

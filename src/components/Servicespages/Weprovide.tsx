@@ -14,46 +14,44 @@ export default function WeProvide() {
       title: "Recruitment",
       icon: <FaSearch className="text-3xl mb-4" />,
       description:
-        "Nist sex visit mascehsa potenti consequat pharetra luchia. Autorii commodis ne etiam sempre sed impiant i simetri nostra malesuada luchia nec.",
+        "We help you find the right talent faster — from frontline workers to specialized roles — ensuring a seamless hiring process tailored to your industry.",
     },
     {
       title: "Career Growth",
       icon: <FaChartLine className="text-3xl mb-4" />,
       description:
-        "Himenaecs ad finibus velit litora id vestibulum faucibus fringilla integer adipiscing purus",
+        "Our programs support workers in upskilling, professional development, and long-term career success through training and mentorship.",
     },
     {
       title: "Gigs",
       icon: <FaBriefcase className="text-3xl mb-4" />,
       description:
-        "Himenaecs ad finibus velit litora id vestibulum faucibus fringilla integer adipiscing purus",
+        "We connect businesses with short-term, on-demand workers for seasonal, project-based, or temporary staffing needs across various sectors.",
     },
     {
       title: "HR Solutions",
       icon: <FaUsers className="text-3xl mb-4" />,
       description:
-        "Himenaecs ad finibus velit litora id vestibulum faucibus fringilla integer adipiscing purus",
+        "From onboarding to compliance, our tailored HR services streamline your workforce management, saving you time and reducing overhead.",
     },
     {
       title: "Payroll Services",
       icon: <FaMoneyBillWave className="text-3xl mb-4" />,
       description:
-        "Himenaecs ad finibus velit litora id vestibulum faucibus fringilla integer adipiscing purus",
+        "We manage payroll processing, tax filings, and employee compensation to ensure accurate, on-time payments every cycle.",
     },
     {
       title: "Workforce System",
       icon: <FaCogs className="text-3xl mb-4" />,
       description:
-        "Himenaecs ad finibus velit litora id vestibulum faucibus fringilla integer adipiscing purus",
+        "Our smart workforce management tools help you schedule shifts, track performance, and manage employees efficiently across all departments.",
     },
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-5 max-w-7xl">
-        <h1 className="text-4xl font-bold text-center mb-4">
-          Professional Coach
-        </h1>
+        <h1 className="text-4xl font-bold text-center mb-4">What We Provide</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((service, index) => (

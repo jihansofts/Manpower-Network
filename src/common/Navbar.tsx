@@ -36,7 +36,7 @@ const navLinks: NavLink[] = [
     href: "/employees",
   },
   {
-    name: "Partnership",
+    name: "Partner with Us",
     href: "/partnership",
   },
   {
