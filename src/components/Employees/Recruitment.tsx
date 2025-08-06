@@ -11,35 +11,35 @@ import AdsHeadline from "@/common/AdsHeadline";
 const selection = [
   {
     icons: <LuUserSearch className="text-2xl text-white" />,
-    title: "Search and selection of workers",
-    desc: "Our task is to identify, attract and evaluate the best candidates.",
+    title: "Search and Selection of Workers",
+    desc: " We identify, attract, and assess top talent to match the needs of each organization.",
   },
   {
     icons: <BiSolidUserDetail className="text-2xl text-white" />,
-    title: "Residence and work permits",
-    desc: "We provide all necessary permits for legal residence and work in the country",
+    title: "Residence and Work Permits",
+    desc: " We handle all necessary documentation to ensure legal residence and employment.",
   },
   {
     icons: <GrIntegration className="text-2xl text-white" />,
-    title: "Integration of workers",
-    desc: "We help in the integration of workers into Croatian society and the labor market.",
+    title: "Integration Support",
+    desc: "We assist workers in adapting to their new community and workplace for a smooth transition.",
   },
 ];
 const Business = [
   {
     icons: <TbArrowLeftRight className="text-2xl text-white" />,
-    title: "Business flexibility",
-    desc: "Optimize human resources according to current needs.",
+    title: "Business Flexibility",
+    desc: "Adjust your workforce to meet evolving business needs with ease.",
   },
   {
     icons: <AiTwotoneSafetyCertificate className="text-2xl text-white" />,
-    title: "Legal certainty",
-    desc: "Reduce the risk of legal complications. We ensure full compliance with legal regulations.",
+    title: "Legal Assurance",
+    desc: " Minimize risks with our strict adherence to all legal and regulatory requirements.",
   },
   {
     icons: <HiOutlineDocumentReport className="text-2xl text-white" />,
-    title: "Payroll calculation",
-    desc: "Professional and high-quality care of the entire payroll process and frequent changes in regulations.",
+    title: "Payroll Management",
+    desc: " Rely on our expertise for accurate payroll processing, even amidst frequent regulatory changes.",
   },
 ];
 
@@ -65,13 +65,13 @@ export default function Recruitment() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex flex-col justify-center space-y-10">
             <h2 className="text-[48px] text-white font-Inter font-bold">
-              Recruitment & administration
+              Recruitment & Administration
             </h2>
             <p className="text-[16px] text-white font-Inter font-normal">
-              We carry out a number of activities, from advertising vacancies on
-              a global level, through guiding the process of obtaining the
-              necessary work permits and visas, to helping in the integration of
-              workers into Croatian society and the labor market.
+              From global job advertising to securing work permits and visas, we
+              manage every step of the hiring process. We also provide support
+              for smooth worker integration into the local community and labor
+              market.
             </p>
             <div className="max-w-2xl">
               <Link
@@ -125,14 +125,13 @@ export default function Recruitment() {
           </div>
           <div className="flex flex-col justify-center space-y-10">
             <h2 className="text-[48px] text-white font-Inter font-bold">
-              Temporary staffing
+              Temporary Staffing
             </h2>
             <p className="text-[16px] text-white font-Inter font-normal">
-              This model allows you to quickly adapt to changing market
-              challenges, improving competitiveness and efficiency. Hire a
-              fixed-term employee for increased labor needs and leave the
-              responsibility of payroll and compliance to legal regulations to
-              us.
+              Stay agile in a changing market with our flexible staffing
+              solutions. Hire skilled employees for fixed-term needs while we
+              handle payroll, legal compliance, and all administrative
+              responsibilities.
             </p>
             <div className="max-w-2xl">
               <Link

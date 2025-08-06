@@ -27,8 +27,8 @@ const Specialisms = () => {
             Industries
           </h2>
           <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
-            We specialism in niche tech staffing, connecting top talent with the
-            innovators driving progress.
+            Our expertise lies in connecting highly skilled talent with
+            visionary businesses leading change across industries.
           </p>
         </div>
 

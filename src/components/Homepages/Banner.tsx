@@ -24,12 +24,12 @@ export default function Banner() {
               Empowering Innovation with Expert Talent
             </h2>
             <p className="text-text text-start text-[16px] font-normal">
-              Discovering technology talent to deliver your goals, and creating
-              value for your business.
+              We connect skilled professionals with the right opportunities to
+              achieve your goals and create lasting value for your business.
             </p>
             <p className="text-text text-start text-[16px] mb-4 font-normal ">
-              With SGI, workforce management becomes streamlined, scalable, and
-              smart.
+              With our Manpower Network solutions, talent management becomes
+              streamlined, scalable, and smart.
             </p>
             <Link
               href="/about"

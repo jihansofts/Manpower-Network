@@ -19,8 +19,8 @@ export default function PartnerMap() {
       <div className="container max-w-7xl mx-auto flex flex-col justify-center relative z-10 px-4 min-h-[calc(100vh-5rem)]">
         {/* Heading */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white my-6 leading-tight font-Inter">
-          <span className="block">Ready to join? Apply for</span>
-          <span className="block">a job today!</span>
+          <span className="block">Ready to join? Apply </span>
+          <span className="block">for a job today!</span>
         </h1>
 
         {/* Country Grid */}

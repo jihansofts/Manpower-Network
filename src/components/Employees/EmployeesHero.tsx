@@ -18,16 +18,16 @@ export default function EmployeesHero() {
         {/* Main Heading */}
         <div className="text-start">
           <h1 className="text-5xl capitalize font-Inter md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-            <span className="block">Unique employment models </span>
-            <span className="block">a job today!</span>
+            <span className="block">Innovative Employment </span>
+            <span className="block">Solutions </span>
           </h1>
         </div>
 
         {/* Subtitle */}
         <p className="text-lg text-start  font-Inter md:text-xl lg:text-2xl text-white max-w-5xl mb-10">
-          We offer more innovative models of hiring foreign workers that
-          encourage collaboration, use global talent and bring great value to
-          organizations in Croatia and abroad.
+          Empowering your workforce today! We provide forward‑thinking hiring
+          models that foster collaboration, leverage global talent, and deliver
+          exceptional value to organizations locally and internationally.
         </p>
 
         {/* CTA Button */}

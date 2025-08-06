@@ -6,17 +6,27 @@ import Link from "next/link";
 const reviews = [
   {
     id: 1,
-    text: "Source Technology understood my requirements quickly and recommended this role. Throughout the process, the team was clear and communicated well. They were very clear about job, company and had a good understanding of the organizations expectations.",
+    text: "Manpower Network has been a game-changer for our hiring process. They consistently deliver high-quality candidates who fit both the skill requirements and our company culture. Their professionalism and speed are unmatched.",
     author: "Employer – American Express",
   },
   {
     id: 2,
-    text: "The recruitment process was smooth and efficient. They really understood our company culture and found the perfect match for our team.",
+    text: "We needed to scale our workforce quickly for a major project, and Manpower Network delivered exactly what we needed. The team’s efficiency and understanding of our industry made all the difference.",
     author: "Employer – Google",
   },
   {
     id: 3,
-    text: "Exceptional service! They delivered high-quality candidates faster than any other agency we've worked with.",
+    text: "Partnering with Manpower Network has significantly improved our recruitment strategy. Their ability to source top-tier talent, even for niche roles, has given us a competitive advantage in the market.",
+    author: "Employer – Microsoft",
+  },
+  {
+    id: 4,
+    text: "The team at Manpower Network goes beyond filling positions; they provide long-term staffing solutions. Their commitment to understanding our needs has saved us time and resources while ensuring quality hires.",
+    author: "Employer – Microsoft",
+  },
+  {
+    id: 5,
+    text: "We’ve worked with several recruitment agencies, but none compare to Manpower Network. Their professionalism, communication, and ability to deliver results make them our go-to staffing partner.",
     author: "Employer – Microsoft",
   },
 ];

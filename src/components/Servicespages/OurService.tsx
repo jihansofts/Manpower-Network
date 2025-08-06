@@ -28,11 +28,11 @@ export default function OurService() {
         {/* Section Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-Inter md:text-5xl font-bold text-white mb-4 inline-block border-b-4 border-primary pb-2">
-            What We Offer
+            Our Services
           </h2>
           <p className="text-[32px] font-Inter font-bold md:text-xl text-white/80 max-w-2xl mx-auto">
-            We connect your business with reliable, skilled non-desk
-            professionals.
+            We connect businesses with dependable, skilled professionals who
+            keep operations running smoothly.
           </p>
         </div>
 
@@ -41,15 +41,13 @@ export default function OurService() {
           {/* Left Content */}
           <div>
             <h4 className="text-[32px] font-Inter font-bold text-white mb-4">
-              Skilled talent that powers every industry.
+              Talent That Drives Success
             </h4>
             <p className="text-white font-Inter font-normal mb-6">
-              We connect businesses with reliable workers across essential
-              sectors — from construction, cleaning, and hospitality to
-              healthcare, logistics, manufacturing, and more. Whether you&apos;re
-              looking for factory staff, hotel and restaurant teams, transport
-              operators, or healthcare professionals, we deliver talent that
-              keeps your operations running smoothly.
+              From customer service to operations, we specialize in sourcing and
+              placing the people who make an impact. Whether you need managers,
+              support staff, or specialized workers, we help you build a strong
+              and dedicated workforce where it matters most.
             </p>
           </div>
 

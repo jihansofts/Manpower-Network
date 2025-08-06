@@ -30,22 +30,22 @@ export const Industries: Industry[] = [
     bg: "/images/Construcitonbg.jpg",
     title: "Construction Workers",
     shortdesc:
-      "We supply skilled labor for commercial and residential construction projects across Europe. Our workforce includes trained professionals capable of handling everything from groundwork to finishing work, ensuring on-time delivery and adherence to European safety standards.",
+      "We provide skilled labor for commercial and residential projects worldwide. Our workforce includes trained professionals for every stage of construction  from groundwork to finishing ensuring timely delivery and compliance with the highest safety standards.",
     href: "/industries/construction",
     sections: [
       {
         title: "Skilled Workforce",
-        desc: "We connect clients with experienced masons, carpenters, electricians, and general laborers who are well-versed in modern construction practices. Our workers are trained to meet the high standards required in both residential and commercial building sites across Europe, ensuring durability and efficiency in all aspects of the job.",
+        desc: " We connect clients with experienced professionals including masons, carpenters, electricians, and general laborers proficient in modern construction practices. Our workers are trained to deliver high-quality results for both residential and commercial projects, ensuring durability, efficiency, and attention to detail in every task.",
         image: "/images/construciton1.jpg",
       },
       {
         title: "Compliance & Process",
-        desc: "We manage every aspect of legal compliance, including work permits, labor laws, and health and safety regulations. Our team ensures that all workers meet immigration requirements and that operations follow European labor standards. This guarantees a smooth process from recruitment to site deployment.",
+        desc: " We oversee all aspects of legal compliance, from work permits and labor laws to health and safety standards. Our team ensures that every worker meets immigration requirements and that operations align with local and international labor regulations, enabling a smooth journey from recruitment to deployment.",
         image: "/images/construciton2.jpg",
       },
       {
         title: "Project Management",
-        desc: "From initial planning to final delivery, we provide comprehensive project management support. Our supervisors coordinate tasks, manage timelines, and ensure that safety protocols are strictly followed. With our hands-on approach, clients can rely on us to deliver high-quality construction outcomes on time and within budget.",
+        desc: "From planning to completion, we offer end-to-end project management support. Our supervisors coordinate workflows, manage schedules, and enforce safety protocols. With our hands-on approach, clients can count on timely, efficient, and high‑quality project delivery.",
         image: "/images/construciton3.jpg",
       },
     ],
@@ -55,22 +55,22 @@ export const Industries: Industry[] = [
     bg: "/images/cleaningbanner.jpg",
     title: "Cleaning",
     shortdesc:
-      "We offer trained cleaning staff for residential, commercial, and industrial sectors.",
+      "We provide trained and reliable cleaning staff for residential, commercial, and industrial spaces delivering spotless results with professionalism and care.",
     href: "/industries/cleaning",
     sections: [
       {
         title: "Service Scope",
-        desc: "Our cleaning teams serve homes, offices, hotels, and industrial spaces.",
+        desc: " Our cleaning teams provide professional services for homes, offices, hotels, and industrial facilities tailored to meet each client’s unique needs.",
         image: "/images/cleaning1.jpg",
       },
       {
         title: "Training & Hygiene",
-        desc: "Workers follow international hygiene standards and protocols.",
+        desc: " All staff are trained to follow international hygiene standards and protocols, ensuring a consistently clean and healthy environment.",
         image: "/images/cleaning2.jpg",
       },
       {
         title: "Safety & Compliance",
-        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        desc: " We strictly adhere to labor laws and health and safety regulations, guaranteeing a safe and compliant work process at all times.",
         image: "/images/cleaning3.jpg",
       },
     ],
@@ -78,24 +78,24 @@ export const Industries: Industry[] = [
   {
     id: 3,
     bg: "/images/Hotel, Restaurant bg.jpg",
-    title: "Hotel & Restaurant",
+    title: "Hotel & Restaurant Staffing",
     shortdesc:
-      "We provide front desk, housekeeping, culinary, and serving staff for hospitality businesses.",
+      "We supply skilled front desk personnel, housekeeping teams, culinary experts, and professional serving staff to meet the needs of hotels, restaurants, and other hospitality establishments.",
     href: "/industries/hotel-restaurant",
     sections: [
       {
         title: "Experienced Experts",
-        desc: "From chefs to waiters, we provide experienced hotel and restaurant staff.",
+        desc: "From talented chefs to attentive waiters, we provide experienced hotel and restaurant professionals who excel in delivering top-tier service.",
         image: "/images/Hotel, Restaurant 1.jpg",
       },
       {
         title: "Guest Satisfaction",
-        desc: "Employees are trained in cultural etiquette, multilingual communication, and guest experience.",
+        desc: "Our employees are trained in cultural etiquette, multilingual communication, and creating exceptional guest experiences that keep customers coming back.",
         image: "/images/Hotel, Restaurant 2.jpg",
       },
       {
         title: "Safety & Compliance",
-        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        desc: "We adhere strictly to labor laws and health and safety regulations, ensuring a safe, compliant, and professional work environment for both staff and guests.",
         image: "/images/Hotel, Restaurant 3.jpg",
       },
     ],
@@ -105,22 +105,22 @@ export const Industries: Industry[] = [
     bg: "/images/wood and furniture bg.jpg",
     title: "Wood & Furniture",
     shortdesc:
-      "We offer skilled woodworkers and furniture manufacturers for industrial and custom projects.",
+      "We provide skilled woodworkers and expert furniture manufacturers for both industrial production and custom-made projects delivering craftsmanship that blends functionality with aesthetic appeal.",
     href: "/industries/wood-furniture",
     sections: [
       {
         title: "Craftsmanship",
-        desc: "Experienced carpenters, polishers, and joiners for high-quality output.",
+        desc: " Our experienced carpenters, polishers, and joiners deliver high-quality finishes and precision work for both standard and bespoke furniture projects.",
         image: "/images/wood and furniture 1.jpg",
       },
       {
         title: "Factory Setup",
-        desc: "Staff trained for both manual and machine-based furniture production.",
+        desc: " We provide staff skilled in both manual craftsmanship and machine-based furniture production ensuring efficiency and consistency at every stage.",
         image: "/images/wood and furniture 2.jpg",
       },
       {
         title: "Safety & Compliance",
-        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        desc: "We strictly follow labor laws and health and safety regulations, creating a secure work environment while maintaining exceptional production standards.",
         image: "/images/wood and furniture 3.jpg",
       },
     ],
@@ -128,26 +128,26 @@ export const Industries: Industry[] = [
   {
     id: 5,
     bg: "/images/tourismbanner.jpg",
-    title: "Tourism",
+    title: "Hospitality & Tourism",
     shortdesc:
-      "We provide experienced tour guides, travel consultants, and hospitality staff to deliver exceptional tourism experiences.",
+      "We provide professional tour guides, knowledgeable travel agents, and dedicated tourism support staff ensuring every guest enjoys a seamless, memorable, and enriching travel experience.",
     href: "/industries/hospitality-tourism",
     sections: [
       {
         title: "Travel Professionals",
-        desc: "Qualified tour guides, multilingual travel agents, and cultural coordinators to ensure smooth and engaging travel experiences.",
+        desc: "We provide licensed tour guides, multilingual travel agents, and cultural liaisons who bring expertise and warmth to every tourism experience. With their deep local knowledge, they turn every trip into a memorable story worth sharing.",
         image: "/images/tourism1.jpg",
       },
       {
         title: "Destination Management",
-        desc: "Skilled personnel for hotel coordination, excursion planning, and seamless guest services from arrival to departure.",
+        desc: "Our skilled support staff handle hotel bookings, excursions, and guest services with precision ensuring smooth operations and exceptional customer satisfaction. We go beyond logistics to create seamless, stress-free journeys for travelers.",
         image: "/images/tourism2.jpg",
       },
       {
         title: "Safety & Compliance",
         desc: "We ensure compliance with labor laws and health and safety regulations.",
         image: "/images/tourism3.jpg",
-      }
+      },
     ],
   },
   {
@@ -155,17 +155,17 @@ export const Industries: Industry[] = [
     bg: "/images/livestockbanner.jpg",
     title: "Livestock & Dairy",
     shortdesc:
-      "Providing skilled labor for farms, dairies, and livestock operations across Europe.",
+      "We supply skilled and dependable workers for farms, dairies, and livestock operations across Europe ensuring smooth operations, animal welfare, and quality production standards.",
     href: "/industries/livestock-dairy",
     sections: [
       {
         title: "Farm Workforce",
-        desc: "Our workers assist in milking, feeding, and managing livestock.",
+        desc: " Our skilled workers assist with milking, feeding, and managing livestock, ensuring efficiency and care in daily farm operations.",
         image: "/images/livestock1.jpg",
       },
       {
         title: "Sustainable Practices",
-        desc: "Support for animal welfare and organic farming standards.",
+        desc: " We support animal welfare and promote organic farming standards helping farms operate responsibly while meeting modern sustainability goals.",
         image: "/images/livestock2.jpg",
       },
       {
@@ -180,17 +180,17 @@ export const Industries: Industry[] = [
     bg: "/images/logisticsbanner.jpg",
     title: "Logistics, Transport & Automobile",
     shortdesc:
-      "Drivers, warehouse staff, and automotive technicians for supply chain and transport needs.",
+      "We provide skilled drivers, efficient warehouse personnel, and experienced automotive technicians to keep your supply chain and transportation operations running smoothly. Our team ensures timely deliveries, safe handling, and optimal vehicle performance.",
     href: "/industries/logistics-transport",
     sections: [
       {
         title: "Fleet Management",
-        desc: "We provide licensed drivers and logistics coordinators.",
+        desc: "We provide licensed, professional drivers and skilled logistics coordinators who ensure safe, efficient, and timely transportation operations.",
         image: "/images/transport1.jpg",
       },
       {
         title: "Warehouse & Mechanics",
-        desc: "Pickers, packers, and technicians for automotive repair and maintenance.",
+        desc: "Our team includes experienced pickers, packers, and certified technicians specializing in automotive repair and maintenance keeping goods moving and vehicles in top condition.",
         image: "/images/transport2.jpg",
       },
       {
@@ -203,19 +203,19 @@ export const Industries: Industry[] = [
   {
     id: 8,
     bg: "/images/manufacturingbanner.jpg",
-    title: "Manufacturing & Factory & Warehouse",
+    title: "Manufacturing, Factory & Warehouse",
     shortdesc:
-      "Reliable workforce for industrial production, packaging, and storage operations.",
+      "We provide a reliable workforce for industrial production, efficient packaging, and streamlined storage operations ensuring productivity, quality, and timely delivery.",
     href: "/industries/manufacturing-factory",
     sections: [
       {
         title: "Factory Labor",
-        desc: "From assembly lines to machine operations, we supply trained factory staff.",
+        desc: " From assembly lines to precision machine operations, we supply trained and dependable factory staff who keep production running smoothly.",
         image: "/images/factory1.jpg",
       },
       {
         title: "Warehouse Operations",
-        desc: "Skilled workers in inventory handling, forklift operations, and logistics support.",
+        desc: " Our skilled workers handle inventory management, forklift operations, and logistics support ensuring accuracy, safety, and efficiency in every shipment.",
         image: "/images/factory2.jpg",
       },
       {
@@ -228,19 +228,19 @@ export const Industries: Industry[] = [
   {
     id: 9,
     bg: "/images/healthcarebanner.jpg",
-    title: "Healthcare or Wellness",
+    title: "Healthcare & Wellness",
     shortdesc:
-      "Healthcare assistants, caregivers, and wellness staff for clinics and homes.",
+      "We provide compassionate healthcare assistants, skilled caregivers, and dedicated wellness staff for clinics, care facilities, and private homes ensuring quality care and comfort for every patient or client.",
     href: "/industries/healthcare-wellness",
     sections: [
       {
         title: "Medical Support",
-        desc: "Trained nurses, aides, and physiotherapists for patient care.",
+        desc: "We provide trained nurses, healthcare aides, and physiotherapists dedicated to delivering quality patient care with professionalism and compassion.",
         image: "/images/healthcare1.jpg",
       },
       {
         title: "Wellness Services",
-        desc: "Massage therapists, yoga instructors, and holistic care providers.",
+        desc: " Our team includes massage therapists, yoga instructors, and holistic care providers who promote physical well-being, mental relaxation, and overall life balance.",
         image: "/images/healthcare2.jpg",
       },
       {
@@ -255,17 +255,17 @@ export const Industries: Industry[] = [
     bg: "/images/textilebanner.jpg",
     title: "Textile & Garments",
     shortdesc:
-      "Tailors, sewing machine operators, and quality control staff for garment production.",
+      "We provide skilled tailors, expert sewing machine operators, and meticulous quality control staff to support every stage of garment production from design to final inspection.",
     href: "/industries/textile-garments",
     sections: [
       {
         title: "Production Support",
-        desc: "Skilled labor in stitching, cutting, and assembling garments.",
+        desc: " We provide skilled labor for stitching, cutting, and assembling garments ensuring precision and consistency in every piece produced.",
         image: "/images/garments1.jpg",
       },
       {
         title: "Export & QC",
-        desc: "Staff experienced in export procedures and quality assurance.",
+        desc: " Our staff are experienced in export procedures and quality assurance, guaranteeing that every product meets both local and international standards.",
         image: "/images/garments2.jpg",
       },
       {
@@ -280,17 +280,17 @@ export const Industries: Industry[] = [
     bg: "/images/shipyardbanner.jpg",
     title: "Shipyard",
     shortdesc:
-      "We supply shipbuilders, welders, painters, and marine technicians for dockyard operations.",
+      "We provide skilled shipbuilders, certified welders, precision painters, and experienced marine technicians to support all aspects of dockyard and vessel maintenance operations ensuring quality workmanship and adherence to industry standards.",
     href: "/industries/shipyard",
     sections: [
       {
         title: "Marine Workforce",
-        desc: "Our skilled teams handle ship repair, painting, welding, and electrical work.",
+        desc: "Our skilled teams specialize in ship repair, precision painting, expert welding, and marine electrical work delivering reliable craftsmanship for every project.",
         image: "/images/shipyard1.jpg",
       },
       {
         title: "Safety & Compliance",
-        desc: "All workers are trained in marine safety protocols and compliance requirements.",
+        desc: " All our workers are thoroughly trained in marine safety protocols and compliance requirements, ensuring operations meet the highest industry standards.",
         image: "/images/shipyard2.jpg",
       },
       {

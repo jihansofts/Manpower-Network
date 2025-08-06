@@ -18,13 +18,13 @@ export default function PartnersHero() {
       <div className="container max-w-7xl mx-auto relative z-10 flex flex-col justify-center items-end text-end px-4 min-h-screen">
         {/* Main Heading */}
         <h1 className="text-5xl font-Inter md:text-7xl lg:text-8xl font-bold text-white leading-tight">
-          Join the Manpower Network Partners Program
+          Join Our Global Partner Network
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg font-Inter md:text-xl lg:text-2xl text-white max-w-2xl mb-10 mt-6">
-          We are constantly looking for reliable associates to find qualified
-          workforce around the world.
+          We’re always seeking trusted partners to help source and connect
+          qualified talent from across the globe.
         </p>
 
         {/* CTA Button (Optional) */}

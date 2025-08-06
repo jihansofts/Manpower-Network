@@ -19,15 +19,15 @@ export default function AboutHero() {
       <div className="container max-w-7xl mx-auto relative z-10 h-full flex flex-col justify-center items-end w-full text-end px-4">
         {/* Main Heading */}
         <h1 className="text-5xl font-Inter md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight">
-          <span className="block">Leave</span>
+          <span className="block">Rise Above </span>
           <span className="block">Ordinary</span>
-          <span className="block">Behind.</span>
         </h1>
 
         {/* Subtitle */}
         <p className="text-lg  font-Inter md:text-xl lg:text-2xl text-white max-w-2xl mb-10">
-          Escape the normal recruitment career, and jump into an experience
-          that&apos;ll build and nurture your professional future.
+          Step away from the traditional recruitment path and step into a career
+          experience that inspires growth, fuels ambition, and shapes your
+          professional future.
         </p>
 
         {/* CTA Button */}

@@ -14,45 +14,50 @@ export default function WeProvide() {
       title: "Recruitment",
       icon: <FaSearch className="text-3xl mb-4" />,
       description:
-        "We help you find the right talent faster — from frontline workers to specialized roles — ensuring a seamless hiring process tailored to your industry.",
+        "From entry-level to executive positions, we connect the right talent with the right opportunities for long-term success.",
     },
     {
       title: "Career Growth",
       icon: <FaChartLine className="text-3xl mb-4" />,
       description:
-        "Our programs support workers in upskilling, professional development, and long-term career success through training and mentorship.",
+        "We support candidates in building career paths that align with their goals and help them reach their full potential.",
     },
     {
-      title: "Gigs",
+      title: "Gigs & Short-Term Roles",
       icon: <FaBriefcase className="text-3xl mb-4" />,
       description:
-        "We connect businesses with short-term, on-demand workers for seasonal, project-based, or temporary staffing needs across various sectors.",
+        "Whether it’s a project-based role or temporary assignment, we help you find flexible opportunities that fit your lifestyle.",
     },
     {
       title: "HR Solutions",
       icon: <FaUsers className="text-3xl mb-4" />,
       description:
-        "From onboarding to compliance, our tailored HR services streamline your workforce management, saving you time and reducing overhead.",
+        "We offer customized human resource services that simplify hiring, onboarding, and workforce management.",
     },
     {
       title: "Payroll Services",
       icon: <FaMoneyBillWave className="text-3xl mb-4" />,
       description:
-        "We manage payroll processing, tax filings, and employee compensation to ensure accurate, on-time payments every cycle.",
+        "Our efficient payroll solutions ensure accurate, timely payments and compliance with all regulations.",
     },
     {
-      title: "Workforce System",
+      title: "Workforce Systems",
       icon: <FaCogs className="text-3xl mb-4" />,
       description:
-        "Our smart workforce management tools help you schedule shifts, track performance, and manage employees efficiently across all departments.",
+        "We provide innovative workforce management strategies to keep your team productive, engaged, and growing.",
     },
   ];
 
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-5 max-w-7xl">
-        <h1 className="text-4xl font-bold text-center mb-4">What We Provide</h1>
-
+        <h1 className="text-4xl font-bold text-center mb-4">
+          Professional Coaching
+        </h1>
+        <p className="text-gray-600 text-[16px] text-center mb-12">
+          We guide professionals in developing their skills, boosting
+          confidence, and preparing for career advancement.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           {services.map((service, index) => (
             <div

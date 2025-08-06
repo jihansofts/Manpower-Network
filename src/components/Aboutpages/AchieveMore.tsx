@@ -29,22 +29,22 @@ export default function AchieveMore() {
         {
           title: "Empowering Success Through Connections",
           description:
-            "Our mission is to bridge the gap between talent and opportunity, helping businesses thrive and professionals advance.",
+            " We bridge the gap between talent and opportunity, helping businesses grow and professionals achieve their career goals.",
         },
         {
           title: "Connecting Talent, Creating Opportunities",
           description:
-            "Our mission is simple—to connect the right talent with the right opportunities through personalized service.",
+            "Our focus is simply to  match the right people with the right roles through tailored recruitment solutions.",
         },
         {
-          title: "Our Commitment to Excellence",
+          title: "Committed to Excellence",
           description:
-            "Driven by our passion for creating meaningful connections, we deliver innovative & effective staffing.",
+            " Passionate about building meaningful connections, we deliver innovative and effective staffing services that drive results.",
         },
         {
           title: "Building Stronger Teams, Shaping Bright Careers",
           description:
-            "We empower organizations and individuals by providing high-quality staffing solutions that foster growth.",
+            " We help organizations thrive and individuals succeed by providing high-quality staffing solutions that promote growth.",
         },
       ],
     },
@@ -54,12 +54,12 @@ export default function AchieveMore() {
         {
           title: "Vision Statement 1",
           description:
-            "We envision a future where businesses and talents thrive through strategic partnerships and innovation.",
+            " We envision a future where businesses and professionals flourish through strong partnerships, innovative solutions, and shared success.",
         },
         {
           title: "Vision Statement 2",
           description:
-            "Our vision is to become a global leader in talent acquisition, delivering value-driven results.",
+            " Our vision is to be a global leader in recruitment, recognized for delivering value-driven results and connecting exceptional talent with opportunity.",
         },
       ],
     },
@@ -69,12 +69,12 @@ export default function AchieveMore() {
         {
           title: "Customized Talent Solutions",
           description:
-            "We analyze your business needs and provide tailored staffing solutions for lasting impact.",
+            " We take the time to understand your business needs and deliver tailored staffing strategies that create long-term success.",
         },
         {
-          title: "Tech-Powered Recruitment",
+          title: "Efficient, Results-Driven Recruitment",
           description:
-            "Using the latest tech and analytics, we streamline recruitment to find the best match quickly.",
+            "Through proven methods and a personalized approach, we streamline the hiring process to quickly connect you with the right talent.",
         },
       ],
     },

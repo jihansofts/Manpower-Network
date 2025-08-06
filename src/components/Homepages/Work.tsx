@@ -13,8 +13,8 @@ export default function Work() {
             Work with Us.
           </h2>
           <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
-            We help businesses secure extraordinary tech talent. Take a look to
-            see how we can work with you.
+            We provide the talent you need to excel. Let’s explore how we can
+            work together to make it happen.
           </p>
         </div>
 

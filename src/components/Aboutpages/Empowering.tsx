@@ -23,12 +23,11 @@ export default function Empowering() {
               ABOUT US
             </h4>
             <h1 className="text-[48px] text-heading font-Inter font-bold">
-              Empowering Businesses and Careers Since 2001
+              Empowering Success Since 2016
             </h1>
             <p className="text-lg font-Inter text-text font-normal mb-6 leading-relaxed">
-              We are more than just a staffing agency - we are a bridge
-              connecting talented professionals with businesses that value their
-              skills.
+              More than a recruitment agency, we connect skilled professionals
+              with forward-thinking businesses to drive mutual growth.
             </p>
           </div>
         </div>
@@ -49,20 +48,21 @@ export default function Empowering() {
           {/* Left Side - Text Content */}
           <div className="w-full lg:w-1/2">
             <h4 className="text-[24px]  text-heading font-Inter font-bold mb-3">
-              Committed to Connecting with Opportunity
+              Connecting Talent to Opportunity
             </h4>
             <p className="text-lg font-Inter text-text font-normal mb-8 leading-relaxed">
-              We believe in the power of people. Our mission is to match top
-              talent with organizations where they can thrive.
+              We know the right people make all the difference. Our mission is
+              to match high-performing professionals with organizations where
+              they can thrive and deliver results.
             </p>
 
             <h4 className="text-[24px]  text-heading font-bold font-Inter mb-4">
-              A Legacy of Excellence in Staffing Solutions
+              Your Trusted Recruitment Partner
             </h4>
             <p className="text-lg font-Inter font-normal text-gray-600 leading-relaxed">
-              With years of experience, we&apos;ve built a reputation for
-              providing reliable, customized staffing services that drive
-              growth.
+              With years of industry experience, we provide reliable, tailored
+              hiring solutions that help businesses grow and give candidates the
+              careers they deserve.
             </p>
           </div>
         </div>

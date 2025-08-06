@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 export default function SkilledTalent() {
   const skills = [
-    { name: "Creative Design", percentage: 80 },
-    { name: "Product Engineering", percentage: 60 },
-    { name: "Support & Tips", percentage: 60 },
-    { name: "Marketing Strategy", percentage: 75 },
+    { name: "Candidate Sourcing", percentage: 80 },
+    { name: "Interview Coordinatio", percentage: 60 },
+    { name: "Job Description Writing", percentage: 60 },
+    { name: "Offer Negotiation", percentage: 75 },
     { name: "Recruitment", percentage: 55 },
   ];
 
@@ -27,18 +27,19 @@ export default function SkilledTalent() {
             <div>
               {/* Main Text */}
               <h4 className="text-[18px] md:text-3xl font-bold text-primary mb-4">
-                BEST SKILL
+                Top Skills & Expertise
               </h4>
 
               {/* heading */}
               <h1 className="text-[48px] text-white font-sans font-bold">
-                Empowering Businesses with Skilled Talent
+                Empowering Businesses with the Right Talent
               </h1>
 
               {/* Description */}
               <p className="text-[18px] text-start text-white font-mono mb-16 max-w-2xl mx-auto">
-                Whether you&apos;re a professional seeking your next opportunity
-                or a company looking to build a winning team, we are committed.
+                Whether you’re a professional ready for your next career move or
+                a company looking to build a high-performing team, we’re here to
+                connect you with success.
               </p>
             </div>
             {skills.map((skill, index) => (

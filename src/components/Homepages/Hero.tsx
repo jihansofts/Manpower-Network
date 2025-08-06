@@ -38,7 +38,7 @@ const Hero = () => {
           {/* Text Section */}
           <div className="text-white flex flex-col items-start text-left">
             <h1 className="font-Inter text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
-              Discover Your Potential
+              Unlock your future.
             </h1>
 
             {/* Divider */}
@@ -54,7 +54,8 @@ const Hero = () => {
             </p>
 
             <p className="text-lg md:text-xl mb-10">
-              Discover your potential with Source Group International.
+              Manpower Network – Discover Your Potential with Source Group
+              International.
             </p>
 
             {/* Buttons */}

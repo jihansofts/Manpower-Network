@@ -5,21 +5,25 @@ const OurValue = () => {
     {
       title: "Simplicity",
       items: [
-        "Communication with Respect",
-        "Clear & Uncomplicated",
-        "Straightforward & Honest",
+        "Communicating with respect",
+        "Keeping processes clear and uncomplicated",
+        "Being straightforward and honest",
       ],
     },
     {
       title: "Progress",
-      items: ["Continuous Improvement", "Relish Challenges", "Solve Problems"],
+      items: [
+        "Striving for continuous improvement",
+        "Embracing challenges with confidence",
+        "Finding solutions that work",
+      ],
     },
     {
-      title: "A+ Distinction",
+      title: "Excellence (A+ Distinction)",
       items: [
-        "Demanding Standards",
-        "Going the extra mile",
-        "Pride in what we do",
+        "Holding ourselves to the highest standards",
+        "Going the extra mile for clients and candidates",
+        "Taking pride in every placement we make",
       ],
     },
   ];
@@ -28,12 +32,12 @@ const OurValue = () => {
     <section className="bg-[#4D4D4E] py-20">
       <div className="container mx-auto px-5 max-w-7xl">
         <h2 className="lg:text-[40px] font-Inter  md:text-5xl font-bold text-white mb-4 inline-block border-b-4 border-primary pb-2">
-          Our Values.
+          Our Values
         </h2>
         <p className="text-lg text-white font-normal mb-12 leading-relaxed">
-          Our 5GI values are at the centre of everything we do. Simplicity,
-          progress, and distinction are intrinsic values that we hold ourselves
-          to every day.
+          Our core values guide everything we do. Simplicity, Progress, and
+          Excellence are principles we live by every day, shaping how we connect
+          talent with opportunity and deliver exceptional recruitment solutions.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

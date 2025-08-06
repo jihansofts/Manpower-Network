@@ -3,11 +3,11 @@ import { motion, useInView, useAnimation } from "framer-motion";
 
 export default function SuccessStory() {
   const metrics = [
-    { value: 3000, suffix: "+", description: "candidates placed" },
-    { value: 66, suffix: "%", description: "of candidates secure interviews" },
-    { value: 23, suffix: "", description: "countries placed in globally" },
-    { value: 75, suffix: "%", description: "NPS Customer Satisfaction Score" },
-    { value: 15, suffix: "", description: "industry awards won" },
+    { value: 750, suffix: "+", description: "successful placement" },
+    { value: 65, suffix: "%", description: "interview success rate " },
+    { value: 7, suffix: "", description: "countries" },
+    { value: 78, suffix: "%", description: "NPS (Customer Satisfaction)" },
+    { value: 15, suffix: "", description: "industry awards" },
     {
       value: 2000,
       suffix: "",

@@ -1,6 +1,7 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { Industries } from "@/lib/data";
+import Link from "next/link";
 
 export default function ContactForm() {
   return (
@@ -105,8 +106,50 @@ export default function ContactForm() {
 
           {/* Contact Info */}
           <div className="flex flex-col justify-center">
-            <h3 className="text-2xl font-bold mb-6">Contact us</h3>
-            <p className="text-lg mb-8">info@sourcegroupinternational.com</p>
+            <h3 className="text-2xl text-black font-bold mb-6">Contact us</h3>
+            <ul className="space-y-2 text-white font-medium">
+              <li>
+                <Link
+                  href="mailto:contact@hydraaesthetics.com"
+                  className="text-black   hover:text-primary transition-colors">
+                  manpowernetwork.agency@gmail.com
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="tel:+1234567890"
+                  className="text-black  hover:text-primary transition-colors">
+                  +1 (234) 567-890
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black  hover:text-primary transition-colors">
+                  Al Nahyan - E20 04 - Abu Dhabi - United Arab Emirates
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black  hover:text-primary transition-colors">
+                  26/2/1 E L Senanayake Veediya, Kandy 20000, Sri Lanka
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black  hover:text-primary transition-colors">
+                  H2/1, Road: 2, Block: C, Section: 2, Mirpur DOHS, Dhaka-1216.
+                </Link>
+              </li>
+            </ul>
 
             {/* <div className="space-y-4">
               <p className="flex items-center gap-3">

@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         {/* Main description */}
         <p className="text-lg mb-8 max-w-2xl">
-          SGI are an international workforce solutions partner, delivering
-          technology talent to future-focused organizations.
+          Manpower Network are an international workforce solutions partner,
+          delivering technology talent to future-focused organizations.
         </p>
 
         {/* Links grid */}
@@ -70,7 +70,7 @@ export default function Footer() {
                 <Link
                   href="mailto:contact@hydraaesthetics.com"
                   className="hover:text-primary transition-colors">
-                  contact@manpowernetworkinternational.com
+                  manpowernetwork.agency@gmail.com
                 </Link>
               </li>
               <li>
@@ -82,11 +82,29 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="https://maps.google.com/?q=8205+Santa+Monica+Blvd,+Santa+Monica,+CA+90046"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors">
-                  Uk Office: 8205 Santa Monica Blvd, Santa Monica, CA 90046
+                  Al Nahyan - E20 04 - Abu Dhabi - United Arab Emirates
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors">
+                  26/2/1 E L Senanayake Veediya, Kandy 20000, Sri Lanka
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors">
+                  H2/1, Road: 2, Block: C, Section: 2, Mirpur DOHS, Dhaka-1216.
                 </Link>
               </li>
             </ul>
