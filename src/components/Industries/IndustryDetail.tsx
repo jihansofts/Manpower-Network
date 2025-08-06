@@ -59,7 +59,7 @@ export default function IndustryDetail({ industry }: Props) {
       </section>
       <div className="bg-[#201D1F] py-20">
         <BrandMarquee
-          title="Our Customers"
+          title="Our Workers"
           logos={logos}
           logoWidth={140}
           logoHeight={80}

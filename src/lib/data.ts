@@ -128,21 +128,26 @@ export const Industries: Industry[] = [
   {
     id: 5,
     bg: "/images/tourismbanner.jpg",
-    title: "Hospitality & Tourism",
+    title: "Tourism",
     shortdesc:
-      "Tour guides, travel agents, and tourism support personnel to enhance customer experience.",
+      "We provide experienced tour guides, travel consultants, and hospitality staff to deliver exceptional tourism experiences.",
     href: "/industries/hospitality-tourism",
     sections: [
       {
         title: "Travel Professionals",
-        desc: "Licensed guides, multilingual agents, and cultural liaisons for tourism operations.",
+        desc: "Qualified tour guides, multilingual travel agents, and cultural coordinators to ensure smooth and engaging travel experiences.",
         image: "/images/tourism1.jpg",
       },
       {
         title: "Destination Management",
-        desc: "Support staff for hotel bookings, excursions, and guest handling.",
+        desc: "Skilled personnel for hotel coordination, excursion planning, and seamless guest services from arrival to departure.",
         image: "/images/tourism2.jpg",
       },
+      {
+        title: "Safety & Compliance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/tourism3.jpg",
+      }
     ],
   },
   {
@@ -163,6 +168,11 @@ export const Industries: Industry[] = [
         desc: "Support for animal welfare and organic farming standards.",
         image: "/images/livestock2.jpg",
       },
+      {
+        title: "Quality Assurance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/livestock3.jpg",
+      },
     ],
   },
   {
@@ -181,7 +191,12 @@ export const Industries: Industry[] = [
       {
         title: "Warehouse & Mechanics",
         desc: "Pickers, packers, and technicians for automotive repair and maintenance.",
-        image: "/images/warehouse2.jpg",
+        image: "/images/transport2.jpg",
+      },
+      {
+        title: "Safety & Compliance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/transport3.jpg",
       },
     ],
   },
@@ -203,6 +218,11 @@ export const Industries: Industry[] = [
         desc: "Skilled workers in inventory handling, forklift operations, and logistics support.",
         image: "/images/factory2.jpg",
       },
+      {
+        title: "Quality Assurance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/factory3.jpg",
+      },
     ],
   },
   {
@@ -222,6 +242,11 @@ export const Industries: Industry[] = [
         title: "Wellness Services",
         desc: "Massage therapists, yoga instructors, and holistic care providers.",
         image: "/images/healthcare2.jpg",
+      },
+      {
+        title: "Health Insurance Compliance",
+        desc: "We ensure compliance with health insurance regulations and policies.",
+        image: "/images/healthcare3.jpg",
       },
     ],
   },
@@ -243,6 +268,11 @@ export const Industries: Industry[] = [
         desc: "Staff experienced in export procedures and quality assurance.",
         image: "/images/garments2.jpg",
       },
+      {
+        title: "Quality Assurance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/garments3.jpg",
+      },
     ],
   },
   {
@@ -263,10 +293,14 @@ export const Industries: Industry[] = [
         desc: "All workers are trained in marine safety protocols and compliance requirements.",
         image: "/images/shipyard2.jpg",
       },
+      {
+        title: "Quality Assurance",
+        desc: "We ensure compliance with labor laws and health and safety regulations.",
+        image: "/images/shipyard3.jpg",
+      },
     ],
   },
 ];
-
 
 export const countryData: CountryType[] = [
   {
