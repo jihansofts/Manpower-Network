@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FiMenu, FiX, FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import { Industries } from "@/lib/data";
+import { usePathname } from "next/navigation";
 
 type Sublink = {
   name: string;
@@ -51,9 +52,14 @@ const navLinks: NavLink[] = [
     name: "Contact",
     href: "/contact",
   },
+  {
+    name: "Careers",
+    href: "/careers",
+  },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [hoveredMenu, setHoveredMenu] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
@@ -91,9 +97,9 @@ export default function Navbar() {
                 <div className="flex items-center gap-1">
                   <Link
                     href={link.href || "#"}
-                    className={`font-bold text-[20px] hover:text-primary transition ${
+                    className={`font-bold font-Inter text-[20px] hover:text-primary transition ${
                       scrolled ? "text-gray-800" : "text-white"
-                    }`}>
+                    } ${pathname === link.href ? "text-primary" : ""}`}>
                     {link.name}
                   </Link>
                   {link.sublinks && <FiChevronDown size={16} />}
@@ -112,7 +118,9 @@ export default function Navbar() {
                           <Link
                             key={sublink.name}
                             href={sublink.href}
-                            className="text-[16px] text-heading font-semibold hover:text-primary">
+                            className={`text-[16px] ${
+                              pathname === sublink.href ? "text-primary" : ""
+                            }  text-heading font-semibold hover:text-primary`}>
                             {sublink.name}
                           </Link>
                         ))}
@@ -130,9 +138,17 @@ export default function Navbar() {
               scrolled ? "text-gray-800" : "text-heading"
             }`}>
             {mobileOpen ? (
-              <FiX size={28} onClick={() => setMobileOpen(false)} />
+              <FiX
+                className="text-primary"
+                size={28}
+                onClick={() => setMobileOpen(false)}
+              />
             ) : (
-              <FiMenu size={28} onClick={() => setMobileOpen(true)} />
+              <FiMenu
+                className="text-primary"
+                size={28}
+                onClick={() => setMobileOpen(true)}
+              />
             )}
           </div>
         </div>
@@ -156,7 +172,7 @@ export default function Navbar() {
                     <details className="group">
                       <summary className="flex justify-between cursor-pointer items-center">
                         <Link href={link.href || "#"}>{link.name}</Link>
-                        <FiChevronDown size={18} />
+                        <FiChevronDown className="text-white" size={18} />
                       </summary>
                       <ul className="mt-2 pl-4 text-sm space-y-2">
                         {link.sublinks.map((sublink: Sublink) => (
@@ -167,7 +183,13 @@ export default function Navbar() {
                       </ul>
                     </details>
                   ) : (
-                    <Link href={link.href || "#"}>{link.name}</Link>
+                    <Link
+                      className={`${
+                        pathname === link.href ? "text-primary" : ""
+                      }`}
+                      href={link.href || "#"}>
+                      {link.name}
+                    </Link>
                   )}
                 </li>
               ))}
