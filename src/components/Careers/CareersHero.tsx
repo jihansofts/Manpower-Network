@@ -30,7 +30,7 @@ export default function CareersHero() {
 
         {/* CTA Button */}
         <Link
-          href="#careers"
+          href="/#careers"
           className="bg-white font-Inter font-bold text-[#201D1F] px-8 py-4 rounded-md text-lg hover:bg-primary transition-colors duration-300">
           Join Us Today
         </Link>
