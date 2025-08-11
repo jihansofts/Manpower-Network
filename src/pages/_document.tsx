@@ -1,14 +1,16 @@
+import type { AppProps } from "next/app";
+import "@/styles/globals.css";
+import { Inter } from "next/font/google";
 
-import { Html, Head, Main, NextScript } from "next/document";
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
 
-export default function Document() {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Html lang="en">
-      <Head />
-      <body className="antialiased">
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
+    <main className={`${inter.className} antialiased`}>
+      <Component {...pageProps} />
+    </main>
   );
 }
