@@ -6,7 +6,6 @@
   --primary: #ecc737;
   --heading: #000000;
   --textColor: #202122;
-  --font-inter: "Inter", sans-serif;
 }
 
 @theme inline {
@@ -20,5 +19,5 @@
 body {
   background: var(--background);
   color: var(--textColor);
-  font-family: var(--font-inter); /* ✅ fallback if var not yet set */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* ✅ fallback if var not yet set */
 }
