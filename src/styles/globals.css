@@ -6,7 +6,6 @@
   --primary: #ecc737;
   --heading: #000000;
   --textColor: #202122;
-  --font-inter: "Inter", sans-serif;
 }
 
 @theme inline {
@@ -15,10 +14,10 @@
   --color-secendary: var(--secendary);
   --color-heading: var(--heading);
   --color-text: var(--textColor);
-  --font-inter: var(--font-inter);
 }
 
 body {
   background: var(--background);
   color: var(--textColor);
+  font-family: var(--font-inter, sans-serif); /* ✅ fallback if var not yet set */
 }
