@@ -1,9 +1,9 @@
 // src/pages/_app.tsx
 import type { AppProps } from "next/app";
 import "@/styles/globals.css";
-import { Inter } from "next/font/google";
+import { Inter_Tight } from "next/font/google";
 
-const inter = Inter({
+const inter = Inter_Tight({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
   variable: "--font-inter", // sets the font in a CSS variable
