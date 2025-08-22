@@ -23,7 +23,7 @@ const Specialisms = () => {
     <section className="py-20 bg-[#2D2D2D]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 border-b-4 border-[#44B6DA] inline-block pb-2">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 border-b-4 border-[#1c3b44] inline-block pb-2">
             Industries
           </h2>
           <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
