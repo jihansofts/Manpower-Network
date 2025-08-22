@@ -39,7 +39,7 @@ const Specialisms = () => {
               key={index}
               className="p-6 bg-white min-w-[200px] flex flex-col items-center min-h-[200px] rounded-lg hover:bg-gray-100 transition-colors duration-200 relative">
               {/* Arrow icon in top right */}
-              <div className="absolute top-4 right-4 text-gray-600 text-xl">
+              <div className="absolute top-4 right-4 text-[#44B6DA] text-[30px]">
                 <FiArrowRight />
               </div>
 

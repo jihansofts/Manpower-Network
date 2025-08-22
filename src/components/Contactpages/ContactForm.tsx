@@ -12,7 +12,9 @@ export default function ContactForm() {
           <div>
             <h2 className="text-3xl font-bold mb-8 uppercase">Contact Form</h2>
             <form className="space-y-6">
+              {/* Industry Dropdown */}
               <select
+                title="Select Industry"
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                 name="industry"
                 defaultValue="">
@@ -40,7 +42,6 @@ export default function ContactForm() {
                     required
                   />
                 </div>
-
                 <div>
                   <label
                     htmlFor="lastName"
