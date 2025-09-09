@@ -170,7 +170,7 @@ export default function Recruitment() {
         titleClassName="text-white"
         logos={logos}
         logoWidth={300}
-        logoHeight={100}
+        logoHeight={300}
         speed={20}
         className="mt-10"
       />
