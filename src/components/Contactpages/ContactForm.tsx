@@ -11,7 +11,10 @@ export default function ContactForm() {
           {/* Contact Form */}
           <div>
             <h2 className="text-3xl font-bold mb-8 uppercase">Contact Form</h2>
-            <form className="space-y-6">
+            <form
+              action="https://formsubmit.co/9352e79a91ce748f9489d0c72dbcc46b"
+              method="POST"
+              className="space-y-6">
               {/* Industry Dropdown */}
               <select
                 title="Select Industry"
@@ -22,7 +25,7 @@ export default function ContactForm() {
                   Select Industry
                 </option>
                 {Industries.map((industry) => (
-                  <option key={industry.id} value={industry.id}>
+                  <option key={industry.id} value={industry.title}>
                     {industry.title}
                   </option>
                 ))}
@@ -38,8 +41,9 @@ export default function ContactForm() {
                   <input
                     type="text"
                     id="firstName"
-                    className="w-full px-4 outline-none py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                    name="firstName"
                     required
+                    className="w-full px-4 outline-none py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                   />
                 </div>
                 <div>
@@ -51,8 +55,9 @@ export default function ContactForm() {
                   <input
                     type="text"
                     id="lastName"
-                    className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                    name="lastName"
                     required
+                    className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                   />
                 </div>
               </div>
@@ -66,8 +71,9 @@ export default function ContactForm() {
                 <input
                   type="tel"
                   id="phone"
-                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  name="phone"
                   required
+                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                 />
               </div>
 
@@ -80,8 +86,9 @@ export default function ContactForm() {
                 <input
                   type="email"
                   id="email"
-                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
+                  name="email"
                   required
+                  className="w-full outline-none px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"
                 />
               </div>
 
@@ -93,9 +100,23 @@ export default function ContactForm() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   className="w-full px-4 py-3 border outline-none border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary"></textarea>
               </div>
+
+              {/* Hidden inputs for FormSubmit config */}
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_subject"
+                value="New Job Application Submission"
+              />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://manpowernet.work"
+              />
 
               <button
                 type="submit"

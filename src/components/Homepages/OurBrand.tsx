@@ -25,7 +25,15 @@ const BrandMarquee = () => {
 
   return (
     <section className="py-16 bg-primary relative overflow-hidden">
-      <AdsHeadline title="Our Customers" logos={doubledLogos} />
+      <AdsHeadline
+        title="Our Customers"
+        logoWidth={200}
+        logoHeight={200}
+        speed={20}
+        logos={doubledLogos}
+        direction="left"
+        pauseOnHover
+      />
     </section>
   );
 };

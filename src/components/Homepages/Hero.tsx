@@ -20,9 +20,9 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center min-h-screen px-4 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center w-full max-w-7xl mx-auto">
+        <div className=" items-center w-full max-w-7xl mx-auto">
           {/* Image Section */}
-          <motion.div
+          {/* <motion.div
             animate={{ x: [-100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="flex justify-center">
@@ -33,10 +33,10 @@ const Hero = () => {
               height={700}
               className="w-full max-w-[500px] md:max-w-[600px] lg:max-w-[700px] h-auto"
             />
-          </motion.div>
+          </motion.div> */}
 
           {/* Text Section */}
-          <div className="text-white flex flex-col items-start text-left">
+          <div className="text-white flex flex-col items-center text-center">
             <h1 className="font-Inter text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6">
               Unlock your future.
             </h1>
@@ -62,12 +62,12 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="/contact"
-                className="bg-primary cursor-pointer text-heading hover:bg-primary hover:text-white px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                className="bg-primary flex justify-center items-center cursor-pointer text-heading hover:bg-primary hover:text-white px-8 py-3 rounded-4xl font-semibold transition-colors duration-200">
                 Contact Us
               </Link>
               <Link
                 href="/industries"
-                className="bg-transparent cursor-pointer border-2 border-primary text-white hover:bg-primary hover:text-heading px-8 py-3 rounded-md font-semibold transition-colors duration-200">
+                className="bg-transparent cursor-pointer border-2 border-primary text-white hover:bg-primary hover:text-heading px-8 py-3 rounded-4xl font-semibold transition-colors duration-200">
                 Hire worker Experts →
               </Link>
             </div>

@@ -71,7 +71,7 @@ const WhyOurCustomers = () => {
             <div className="w-20 h-1 bg-white mb-8"></div>
             <Link
               href="/reviews"
-              className="inline-block text-white border-2 border-primary py-4 px-8 cursor-pointer font-semibold hover:underline text-lg">
+              className="inline-block text-white rounded-4xl border-2 border-primary py-4 px-8 cursor-pointer font-semibold hover:underline text-lg">
               Customer Reviews →
             </Link>
           </div>

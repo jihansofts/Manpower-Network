@@ -80,7 +80,13 @@ export default function Navbar() {
         }`}>
         <div className="flex container justify-between items-center mx-auto py-4 px-6">
           <Link href="/">
-            <Image src="/images/logo.png" alt="Logo" width={100} height={40} className="w-[130px] h-[40px]" />
+            <Image
+              src="/images/logo.png"
+              alt="Logo"
+              width={100}
+              height={40}
+              className="w-[130px] h-[40px]"
+            />
           </Link>
 
           {/* Desktop Nav */}

@@ -16,16 +16,14 @@ interface BrandMarqueeProps {
   titleClassName?: string;
   bgColor?: string;
   gap?: number;
-  fadeEdges?: boolean;
-  fadeWidth?: number;
 }
 
 const BrandMarquee: React.FC<BrandMarqueeProps> = ({
   title = "",
   bgColor = "",
   logos,
-  logoWidth = 200,
-  logoHeight = 60,
+  logoWidth = 120,
+  logoHeight = 80,
   speed = 25,
   direction = "left",
   pauseOnHover = false,
@@ -33,7 +31,7 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
   titleClassName = "",
   gap = 32,
 }) => {
-  const doubledLogos = [...logos]; // for infinite scroll effect
+  const doubledLogos = [...logos, ...logos]; // for infinite scroll effect
 
   return (
     <section
@@ -67,17 +65,17 @@ const BrandMarquee: React.FC<BrandMarqueeProps> = ({
             {doubledLogos.map((logo, i) => (
               <div
                 key={`logo-${i}`}
-                className="flex items-center justify-center"
+                className="flex items-center justify-center relative"
                 style={{
-                  width: `${logoWidth}px`,
-                  height: `${logoHeight}px`,
+                  width: logoWidth,
+                  height: logoHeight,
+                  flexShrink: 0,
                 }}>
                 <Image
                   src={logo}
                   alt={`Logo ${i}`}
-                  width={logoWidth}
-                  height={logoHeight}
-                  className="object-contain w-full h-full"
+                  fill
+                  className="object-contain"
                 />
               </div>
             ))}

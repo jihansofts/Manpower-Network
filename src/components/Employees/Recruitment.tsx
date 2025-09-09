@@ -170,7 +170,8 @@ export default function Recruitment() {
         titleClassName="text-white"
         logos={logos}
         logoWidth={300}
-        fadeWidth={120}
+        logoHeight={100}
+        speed={20}
         className="mt-10"
       />
     </section>

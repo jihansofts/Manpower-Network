@@ -33,7 +33,7 @@ export default function Banner() {
             </p>
             <Link
               href="/about"
-              className="bg-heading  mt-8 max-w-2xs flex justify-center  cursor-pointer text-white px-8 py-4 rounded-lg  text-[20px] font-bold">
+              className="bg-heading  mt-8 max-w-2xs flex justify-center  cursor-pointer text-white px-8 py-4 rounded-4xl  text-[20px] font-bold">
               More About Us →
             </Link>
           </div>

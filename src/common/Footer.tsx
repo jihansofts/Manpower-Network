@@ -68,16 +68,25 @@ export default function Footer() {
             <ul className="space-y-2 text-white font-medium">
               <li>
                 <Link
-                  href="mailto:contact@hydraaesthetics.com"
+                  href="mailto:Chairman@manpowernet.work"
                   className="hover:text-primary transition-colors">
-                  manpowernetwork.agency@gmail.com
+                  Chairman@manpowernet.work
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="tel:+1234567890"
                   className="hover:text-primary transition-colors">
                   +1 (234) 567-890
+                </Link>
+              </li> */}
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors">
+                  17 Somerville Road, Romford, England, RM6 5BD
                 </Link>
               </li>
               <li>

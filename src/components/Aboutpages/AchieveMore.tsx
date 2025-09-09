@@ -2,22 +2,21 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import AdsHeadline from "@/common/AdsHeadline";
+// import AdsHeadline from "@/common/AdsHeadline";
 // import SubscribeSection from "@/common/SubscribeSection";
 
 export default function AchieveMore() {
-  const logos = [
-    "/logos/luminor.png",
-    "/logos/pixelforce.png",
-    "/logos/vontobel.png",
-    "/logos/raiffeisen.png",
-    "/logos/mach.png",
-    "/logos/atos.png",
-    "/logos/deloitte.png",
-    "/logos/accenture.png",
-  ];
+  // const logos = [
+  //   "/logos/luminor.png",
+  //   "/logos/pixelforce.png",
+  //   "/logos/vontobel.png",
+  //   "/logos/raiffeisen.png",
+  //   "/logos/mach.png",
+  //   "/logos/atos.png",
+  //   "/logos/deloitte.png",
+  //   "/logos/accenture.png",
+  // ];
   const [activeTab, setActiveTab] = useState("Our Mission");
-  const doubledLogos = [...logos, ...logos];
 
   const content: Record<
     string,
@@ -168,12 +167,17 @@ export default function AchieveMore() {
           /> */}
         </div>
       </div>
-      <div className="mt-5">
+      {/* <div className="mt-5">
         <AdsHeadline
           title="Trusted by Businesses & Professionals Companies"
           logos={doubledLogos}
+          speed={25}
+          direction="left"
+          logoHeight={200}
+          logoWidth={200}
+          pauseOnHover
         />
-      </div>
+      </div> */}
     </section>
   );
 }
