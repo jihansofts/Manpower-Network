@@ -96,7 +96,7 @@ export default function ContactForm() {
                 <label
                   htmlFor="message"
                   className="block text-[18px] font-medium mb-2">
-                  Message
+                  Message *
                 </label>
                 <textarea
                   id="message"
@@ -130,6 +130,9 @@ export default function ContactForm() {
           <div className="flex flex-col justify-center">
             <h3 className="text-2xl text-black font-bold mb-6">Contact us</h3>
             <ul className="space-y-2 text-white font-medium">
+              <li className="text-black font-bold space-y-5 transition-colors">
+                Email:
+              </li>
               <li>
                 <Link
                   href="mailto:Chairman@manpowernet.work"
@@ -144,6 +147,9 @@ export default function ContactForm() {
                   +1 (234) 567-890
                 </Link>
               </li> */}
+              <li className="text-black font-bold space-y-5 transition-colors">
+                Office Location:
+              </li>
               <li>
                 <Link
                   href=""
