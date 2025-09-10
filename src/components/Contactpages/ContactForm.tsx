@@ -156,6 +156,15 @@ export default function ContactForm() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-black  hover:text-primary transition-colors">
+                  17 Somerville Road, Romford, England, RM6 5BD
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-black  hover:text-primary transition-colors">
                   Al Nahyan - E20 04 - Abu Dhabi - United Arab Emirates
                 </Link>
               </li>
