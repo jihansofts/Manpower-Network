@@ -132,18 +132,18 @@ export default function ContactForm() {
             <ul className="space-y-2 text-white font-medium">
               <li>
                 <Link
-                  href="mailto:contact@hydraaesthetics.com"
+                  href="mailto:Chairman@manpowernet.work"
                   className="text-black   hover:text-primary transition-colors">
-                  manpowernetwork.agency@gmail.com
+                  Chairman@manpowernet.work
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="tel:+1234567890"
                   className="text-black  hover:text-primary transition-colors">
                   +1 (234) 567-890
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href=""
