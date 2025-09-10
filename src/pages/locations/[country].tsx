@@ -77,7 +77,7 @@ export default function CountryPage() {
                   </p>
                 </div>
 
-                <div className="flex items-center ">
+                {/* <div className="flex items-center ">
                   <svg
                     className="h-10 w-10 text-heading mr-3 mt-0"
                     fill="none"
@@ -93,7 +93,7 @@ export default function CountryPage() {
                   <p className="text-heading text-[20px] font-bold font-sans">
                     {countryInfo.phone}
                   </p>
-                </div>
+                </div> */}
 
                 <div className="flex items-center">
                   <svg
@@ -109,7 +109,7 @@ export default function CountryPage() {
                     />
                   </svg>
                   <p className="text-heading text-[20px] font-bold font-sans">
-                    {countryInfo.email}
+                    Chairman@manpowernet.work
                   </p>
                 </div>
               </div>
@@ -117,7 +117,6 @@ export default function CountryPage() {
           </div>
         </div>
       </div>
-      
     </Layout>
   );
 }

@@ -1,5 +1,4 @@
 import Banner from "@/components/Homepages/Banner";
-import AwardsAccreditations from "@/components/Homepages/HappyWorker";
 import Hero from "@/components/Homepages/Hero";
 import BrandCarousel from "@/components/Homepages/OurBrand";
 import Specialisms from "@/components/Homepages/Specialisms";
