@@ -305,7 +305,7 @@ export const Industries: Industry[] = [
 export const countryData: CountryType[] = [
   {
     id: 1,
-    bgImage: "/images/london.jfif",
+    bgImage: "/images/UK.jpg",
     name: "London",
     city: "London",
     href: "/locations/london",
