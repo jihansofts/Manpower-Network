@@ -9,19 +9,15 @@ interface Props {
 }
 
 const logos = [
-  "/images/worker1.jpg",
-  "/images/worker2.jpg",
-  "/images/worker3.jpg",
-  "/images/worker4.jpg",
-  "/images/worker5.jpg",
-  "/images/worker6.jpg",
-  "/images/worker7.jpg",
-  "/images/worker8.jpg",
-  "/images/worker9.jpg",
-  "/images/worker10.jpg",
-  "/images/worker11.jpg",
-  "/images/worker12.jpg",
-  "/images/worker13.jpg",
+  "/images/1.png",
+  "/images/2.png",
+  "/images/3.png",
+  "/images/4.png",
+  "/images/5.png",
+  "/images/6.png",
+  "/images/7.png",
+  "/images/8.png",
+  "/images/9.png",
 ];
 export default function IndustryDetail({ industry }: Props) {
   return (
@@ -59,7 +55,7 @@ export default function IndustryDetail({ industry }: Props) {
       </section>
       <div className="bg-[#201D1F] py-20">
         <BrandMarquee
-          title="Our Workers"
+          title="Our Customers"
           logos={logos}
           logoWidth={140}
           logoHeight={80}

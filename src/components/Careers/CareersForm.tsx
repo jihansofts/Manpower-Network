@@ -68,7 +68,7 @@ export default function CareersForm() {
                     <label
                       htmlFor="firstName"
                       className="block text-primary text-[18px] font-medium mb-2">
-                      First Name *
+                      First Name 
                     </label>
                     <input
                       type="text"
@@ -83,7 +83,7 @@ export default function CareersForm() {
                     <label
                       htmlFor="lastName"
                       className="block text-primary text-[18px] font-medium mb-2">
-                      Last Name *
+                      Last Name 
                     </label>
                     <input
                       type="text"
@@ -99,7 +99,7 @@ export default function CareersForm() {
                   <label
                     htmlFor="phone"
                     className="block text-primary text-[18px] font-medium mb-2">
-                    Mobile Phone *
+                    Mobile Phone 
                   </label>
                   <input
                     type="tel"
@@ -114,7 +114,7 @@ export default function CareersForm() {
                   <label
                     htmlFor="email"
                     className="block text-primary text-[18px] font-medium mb-2">
-                    Email *
+                    Email 
                   </label>
                   <input
                     type="email"
@@ -148,7 +148,7 @@ export default function CareersForm() {
                 <input
                   type="hidden"
                   name="_next"
-                  value="https://yourdomain.com/thank-you"
+                  value=""
                 />
 
                 <button
