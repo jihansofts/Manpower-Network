@@ -306,7 +306,7 @@ export const countryData: CountryType[] = [
   {
     id: 1,
     bgImage: "/images/UK.jpg",
-    name: "London",
+    name: "England",
     city: "London",
     href: "/locations/london",
     description:
@@ -318,7 +318,7 @@ export const countryData: CountryType[] = [
   {
     id: 2,
     bgImage: "/images/dubai.jpg",
-    name: "Dubai",
+    name: "United Arab Emirates",
     city: "Dubai",
     href: "/locations/dubai",
     description:
